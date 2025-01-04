@@ -8,10 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        raleway: "var(--font-raleway), sans-serif",
+      }
     },
   },
   plugins: [],
