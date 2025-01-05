@@ -3,7 +3,7 @@ import { JSX } from "react";
 
 export default function Navbar(): JSX.Element {
     return (
-        <div className="flex justify-between items-center py-4 px-6 border-b-2 border-slate-400 bg-gray-950">
+        <div className="flex justify-between items-center py-4 px-6 border-b-2 border-neutral-300 bg-gray-950">
             <Image
                 src="/upanshu-parekh-logo.svg"
                 alt="Upanshu Parekh's Logo"
