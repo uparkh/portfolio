@@ -24,7 +24,10 @@ export default function Home(): JSX.Element {
               <h4 className="text-lg">Aspiring Software Engineer</h4>
             </div>
             <div className="flex flex-col items-center justify-around">
-              <a href="mailto:parekhupanshu@gmail.com">
+              <a
+                href="mailto:parekhupanshu@gmail.com"
+                className="hover:brightness-75"
+              >
                 <Image
                   src="/at-sign.svg"
                   alt="At sign to Upanshu's email"
@@ -36,6 +39,7 @@ export default function Home(): JSX.Element {
                 href="https://www.github.com/blc5-33"
                 target="_blank"
                 rel="noreferrer noopener"
+                className="hover:brightness-75"
               >
                 <Image
                   src="/github-logo.svg"
@@ -48,6 +52,7 @@ export default function Home(): JSX.Element {
                 href="https://www.linkedin.com/in/uparkh/"
                 target="_blank"
                 rel="noreferrer noopener"
+                className="hover:brightness-75"
               >
                 <Image
                   src="/linkedin-circle.svg"
