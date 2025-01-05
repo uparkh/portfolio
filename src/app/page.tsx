@@ -7,8 +7,8 @@ export default function Home(): JSX.Element {
     <>
       <div className="flex h-screen max-h-[900px] min-w-[441px] flex-col overflow-hidden">
         <Navbar />
-        <div className="relative -z-20 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
-          <div className="center absolute bottom-0 left-0 right-0 top-1 -z-10 mx-auto max-w-[30rem] origin-top translate-x-4 -scale-x-125 scale-y-125">
+        <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
+          <div className="absolute bottom-0 left-0 right-0 top-1 -z-10 mx-auto max-w-[30rem] origin-top translate-x-4 -scale-x-125 scale-y-125">
             <Image
               src="/boss.png"
               alt="Upanshu's portrait"
@@ -24,24 +24,38 @@ export default function Home(): JSX.Element {
               <h4 className="text-lg">Aspiring Software Engineer</h4>
             </div>
             <div className="flex flex-col items-center justify-around">
-              <Image
-                src="/at-sign.svg"
-                alt="At sign for Upanshu's email"
-                width={32}
-                height={32}
-              />
-              <Image
-                src="/github-logo.svg"
-                alt="Github logo for Upanshu's Github account"
-                width={32}
-                height={32}
-              />
-              <Image
-                src="/linkedin-circle.svg"
-                alt="Linkedin logo for Upanshu's Linkedin account"
-                width={32}
-                height={32}
-              />
+              <a href="mailto:parekhupanshu@gmail.com">
+                <Image
+                  src="/at-sign.svg"
+                  alt="At sign to Upanshu's email"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a
+                href="https://www.github.com/blc5-33"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Image
+                  src="/github-logo.svg"
+                  alt="Github logo to Upanshu's Github account"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/uparkh/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Image
+                  src="/linkedin-circle.svg"
+                  alt="Linkedin logo to Upanshu's Linkedin account"
+                  width={32}
+                  height={32}
+                />
+              </a>
             </div>
           </div>
         </div>
