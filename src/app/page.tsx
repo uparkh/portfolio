@@ -1,12 +1,13 @@
 import Navbar from "./_components/navbar";
 import ResumeSectionHeader from "./_components/resume-section-header";
+import ResumeSectionText from "./_components/resume-section-text";
 import Image from "next/image";
 import { JSX } from "react";
 
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="flex h-screen max-h-[900px] min-w-[441px] flex-col overflow-hidden">
+      <div className="flex h-screen max-h-[900px] min-h-[560px] min-w-[441px] flex-col overflow-hidden">
         <Navbar />
         <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
           <div className="absolute bottom-0 left-0 right-0 top-1 -z-10 mx-auto max-w-[30rem] origin-top translate-x-4 -scale-x-125 scale-y-125">
@@ -66,13 +67,43 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="bg-main-slate flex flex-col items-center gap-8 p-14 text-white">
+      <div className="bg-main-slate flex flex-col items-center gap-5 p-14 text-white">
         <ResumeSectionHeader>ABOUT ME</ResumeSectionHeader>
-        <p className="font-open-sans text-lg font-semibold">
-          {
-            "Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the University of Illinois at Urbana-Champaign (UIUC) studying Computer Science. I am currently working on web-based projects and plan on diving into some low level project soon. I have experience with:"
-          }
-        </p>
+        <Image
+          src="/uiuc-cs-logo.png"
+          width={200}
+          height={200}
+          alt="UIUC CS Logo"
+          className="rounded-lg"
+        ></Image>
+        <ResumeSectionText>
+          <p>
+            Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
+            the University of Illinois at Urbana-Champaign (UIUC) studying
+            Computer Science. I am currently working on web-based projects and
+            plan on diving into some low level project soon. I have experience
+            with:
+          </p>
+          <ul className="list-inside list-disc">
+            <li>Python (Pytorch, Numpy, etc)</li>
+            <li>Containerization and Virtualization</li>
+            <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
+            <li>Unix / Linux / C</li>
+            <li>Java</li>
+          </ul>
+          <p>I have dabbled in but want to get stronger at:</p>
+          <ul className="list-inside list-disc">
+            <li>C++</li>
+            <li>SQL / Databases</li>
+            <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
+            <li>Game Development</li>
+          </ul>
+          <p>
+            My personal interests include: Formula 1, astronomy, videogames,
+            weightlifting. Feel free to bring these up in conversation if we
+            have any shared interests!
+          </p>
+        </ResumeSectionText>
       </div>
     </>
   );

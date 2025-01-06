@@ -5,5 +5,9 @@ export default function ResumeSectionText({
 }: Readonly<{
   children: React.ReactNode;
 }>): JSX.Element {
-  return <div className="font-open-sans text-lg font-semibold">{children}</div>;
+  return (
+    <div className="font-open-sans flex flex-col gap-2 text-left text-lg font-semibold">
+      {children}
+    </div>
+  );
 }
