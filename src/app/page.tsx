@@ -114,8 +114,13 @@ export default function Home(): JSX.Element {
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
             <ResumeSectionText>
-              bing fdnafiodsnacoiadsm oicdma soicbingfdnafiodsnacoiadcoiadsm
-              oicdma soicbingfdnafiodsnacoiad
+              Over the summer of 2024 I worked as a Software Engineer Intern at
+              CodeHS, a company that develops educational Computer Science
+              material for millions of students. {"\n\n"} I worked on
+              prototyping a search engine that performs fast similarity search
+              on a word embedding database, as well as a realtime quiz
+              leaderboard prototype for Questions of the Day (similar to
+              Kahoot!).
             </ResumeSectionText>
           </div>
         </div>

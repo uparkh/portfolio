@@ -9,7 +9,7 @@ export default function ResumeSectionText({
 }>): JSX.Element {
   return (
     <div
-      className={`font-open-sans text-wrap text-left text-lg font-semibold ${className}`}
+      className={`font-open-sans whitespace-pre-line text-wrap text-left text-lg font-semibold ${className}`}
     >
       {children}
     </div>
