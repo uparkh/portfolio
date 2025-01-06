@@ -11,6 +11,7 @@ import linkedinLogo from "/public/linkedin-circle.svg";
 import uiucCsLogo from "/public/uiuc-cs-logo.png";
 import codehsLogo from "/public/codehs-logo.png";
 import iemLogo from "/public/iem-logo.png";
+import motecScreenshot from "/public/motec-i2.png";
 
 import { JSX } from "react";
 
@@ -128,8 +129,17 @@ export default function Home(): JSX.Element {
           <ResumeSectionH1 className="border-black">
             EXTRACURRICULARS
           </ResumeSectionH1>
-          <div className="relative h-56 w-96">
-            <Image src={iemLogo} alt="Illini Electric Motorsports Logo" />
+          <div className="relative h-56 w-[22rem]">
+            <Image
+              src={motecScreenshot}
+              alt="MoTeC i2 telemetry software screenshot"
+              className="absolute left-0 top-0 z-0 w-80 rounded-lg"
+            />
+            <Image
+              src={iemLogo}
+              alt="Illini Electric Motorsports Logo"
+              className="absolute bottom-0 right-0 w-28"
+            />
           </div>
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
