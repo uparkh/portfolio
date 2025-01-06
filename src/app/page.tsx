@@ -1,4 +1,5 @@
 import Navbar from "./_components/navbar";
+import ResumeSectionHeader from "./_components/resume-section-header";
 import Image from "next/image";
 import { JSX } from "react";
 
@@ -16,7 +17,7 @@ export default function Home(): JSX.Element {
               height={2992}
             />
           </div>
-          <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((480px/100vw)*7deg)] bg-black text-white opacity-40"></div>
+          <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((480px/100vw)*7deg)] bg-black text-white opacity-70"></div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-1/3 min-h-56 grid-cols-6 gap-3 p-6">
             <div className="col-span-5 flex flex-col justify-evenly p-4 pt-14 font-raleway font-bold text-white">
               <p className="text-xl">Hi, I am</p>
@@ -65,7 +66,14 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="h-10 bg-slate-100">test 2</div>
+      <div className="bg-main-slate flex flex-col items-center gap-8 p-14 text-white">
+        <ResumeSectionHeader>ABOUT ME</ResumeSectionHeader>
+        <p className="font-open-sans text-lg font-semibold">
+          {
+            "Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the University of Illinois at Urbana-Champaign (UIUC) studying Computer Science. I am currently working on web-based projects and plan on diving into some low level project soon. I have experience with:"
+          }
+        </p>
+      </div>
     </>
   );
 }

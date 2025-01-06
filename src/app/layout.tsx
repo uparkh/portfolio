@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const raleway = Raleway({
   variable: "--font-raleway",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+const open_sans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
 });
 
@@ -19,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} antialiased`}>{children}</body>
+      <body
+        className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
