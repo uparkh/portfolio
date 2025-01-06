@@ -19,6 +19,7 @@ export default {
         raleway: "var(--font-raleway), sans-serif",
         montserrat: "var(--font-montserrat), sans-serif",
         "open-sans": "var(--font-open-sans), sans-serif",
+        overpass: "var(--font-overpass), sans-serif",
       },
     },
   },

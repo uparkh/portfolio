@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Raleway, Montserrat, Open_Sans } from "next/font/google";
+import { Raleway, Montserrat, Open_Sans, Overpass } from "next/font/google";
 import "./globals.css";
 
 const raleway = Raleway({
@@ -17,6 +17,11 @@ const open_sans = Open_Sans({
   subsets: ["latin"],
 });
 
+const overpass = Overpass({
+  variable: "--font-overpass",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Upanshu Parekh",
   description: "Upanshu Parekh's personal portfolio",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} antialiased`}
+        className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} ${overpass.variable} antialiased`}
       >
         {children}
       </body>

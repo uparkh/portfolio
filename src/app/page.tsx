@@ -1,6 +1,7 @@
 import Navbar from "./_components/navbar";
-import ResumeSectionHeader from "./_components/resume-section-header";
+import ResumeSectionH1 from "./_components/resume-section-h1";
 import ResumeSectionText from "./_components/resume-section-text";
+import ResumeExperienceH2 from "./_components/resume-experience-h2";
 import Image from "next/image";
 import { JSX } from "react";
 
@@ -68,42 +69,56 @@ export default function Home(): JSX.Element {
         </div>
       </div>
       <div className="bg-main-slate flex flex-col items-center gap-5 p-14 text-white">
-        <ResumeSectionHeader>ABOUT ME</ResumeSectionHeader>
+        <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
         <Image
           src="/uiuc-cs-logo.png"
           width={200}
           height={200}
           alt="UIUC CS Logo"
-          className="rounded-lg"
+          className="rounded-2xl"
         ></Image>
         <ResumeSectionText>
-          <p>
-            Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
-            the University of Illinois at Urbana-Champaign (UIUC) studying
-            Computer Science. I am currently working on web-based projects and
-            plan on diving into some low level project soon. I have experience
-            with:
-          </p>
-          <ul className="list-inside list-disc">
+          Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
+          University of Illinois at Urbana-Champaign (UIUC) studying Computer
+          Science. I am currently working on web-based projects and plan on
+          diving into some low level project soon. I have experience with:
+          <ul className="my-2 list-inside list-disc">
             <li>Python (Pytorch, Numpy, etc)</li>
             <li>Containerization and Virtualization</li>
             <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
             <li>Unix / Linux / C</li>
             <li>Java</li>
           </ul>
-          <p>I have dabbled in but want to get stronger at:</p>
-          <ul className="list-inside list-disc">
+          I have dabbled in but want to get stronger at:
+          <ul className="my-2 list-inside list-disc">
             <li>C++</li>
             <li>SQL / Databases</li>
             <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
             <li>Game Development</li>
           </ul>
-          <p>
-            My personal interests include: Formula 1, astronomy, videogames,
-            weightlifting. Feel free to bring these up in conversation if we
-            have any shared interests!
-          </p>
+          My personal interests include: Formula 1, astronomy, videogames,
+          weightlifting. Feel free to bring these up in conversation if we have
+          any shared interests!
         </ResumeSectionText>
+      </div>
+      <div className="bg-main-ivory p-14 text-black">
+        <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-5">
+          <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
+          <Image
+            src="/codehs-logo.png"
+            width={200}
+            height={200}
+            alt="UIUC CS Logo"
+            className="rounded-lg"
+          ></Image>
+          <div>
+            <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
+            <ResumeSectionText>
+              bing fdnafiodsnacoiadsm oicdma soicbingfdnafiodsnacoiadcoiadsm
+              oicdma soicbingfdnafiodsnacoiad
+            </ResumeSectionText>
+          </div>
+        </div>
       </div>
     </>
   );
