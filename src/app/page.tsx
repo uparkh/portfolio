@@ -10,8 +10,7 @@ import githubLogo from "/public/github-logo.svg";
 import linkedinLogo from "/public/linkedin-circle.svg";
 import uiucCsLogo from "/public/uiuc-cs-logo.png";
 import codehsLogo from "/public/codehs-logo.png";
-import iemLogo from "/public/iem-logo.png";
-import motecScreenshot from "/public/motec-i2.png";
+import motecIem from "/public/motec-iem.png";
 
 import { JSX } from "react";
 
@@ -73,12 +72,12 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="bg-main-slate flex flex-col items-center gap-5 p-14 text-white">
+      <div className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white">
         <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
         <Image
           src={uiucCsLogo}
           alt="UIUC CS Logo"
-          className="w-48 rounded-2xl"
+          className="w-3/5 min-w-36 max-w-48 rounded-2xl"
         ></Image>
         <ResumeSectionText>
           Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
@@ -110,7 +109,7 @@ export default function Home(): JSX.Element {
           <Image
             src={codehsLogo}
             alt="CodeHS Logo"
-            className="w-52 rounded-lg"
+            className="w-1/2 min-w-40 max-w-52 rounded-lg"
           ></Image>
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
@@ -129,18 +128,11 @@ export default function Home(): JSX.Element {
           <ResumeSectionH1 className="border-black">
             EXTRACURRICULARS
           </ResumeSectionH1>
-          <div className="relative h-56 w-[22rem]">
-            <Image
-              src={motecScreenshot}
-              alt="MoTeC i2 telemetry software screenshot"
-              className="absolute left-0 top-0 z-0 w-80 rounded-lg"
-            />
-            <Image
-              src={iemLogo}
-              alt="Illini Electric Motorsports Logo"
-              className="absolute bottom-0 right-0 w-28"
-            />
-          </div>
+          <Image
+            src={motecIem}
+            alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
+            className="w-4/5 min-w-56 max-w-80"
+          ></Image>
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
             <ResumeSectionText>
