@@ -12,6 +12,8 @@ import uiucCsLogo from "/public/uiuc-cs-logo.png";
 import codehsLogo from "/public/codehs-logo.png";
 import motecIem from "/public/motec-iem.png";
 import cyberscape from "/public/cyberscape.png";
+import musaicLogo from "/public/musaic-logo.svg";
+import fancySeparator from "/public/fancy-separator.png";
 
 import { JSX } from "react";
 
@@ -26,7 +28,7 @@ export default function Home(): JSX.Element {
           </div>
           <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((30rem/100vw)*7deg)] bg-black text-white opacity-70"></div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-1/3 min-h-60 grid-cols-6 gap-3 p-6">
-            <div className="col-span-5 flex flex-col justify-evenly p-4 pt-14 font-raleway font-bold text-white">
+            <div className="col-span-5 flex flex-col justify-evenly p-4 pt-14 font-raleway font-bold text-white shadow-white drop-shadow-lg">
               <p className="text-xl">Hi, I am</p>
               <h1 className="text-4xl">Upanshu Parekh</h1>
               <h4 className="text-lg">Aspiring Software Engineer</h4>
@@ -79,7 +81,7 @@ export default function Home(): JSX.Element {
           src={uiucCsLogo}
           alt="UIUC CS Logo"
           className="w-3/5 min-w-36 max-w-48 rounded-2xl"
-        ></Image>
+        />
         <ResumeSectionText>
           Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
           University of Illinois at Urbana-Champaign (UIUC) studying Computer
@@ -111,7 +113,7 @@ export default function Home(): JSX.Element {
             src={codehsLogo}
             alt="CodeHS Logo"
             className="w-1/2 min-w-40 max-w-52 rounded-lg"
-          ></Image>
+          />
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
             <ResumeSectionText>
@@ -133,7 +135,7 @@ export default function Home(): JSX.Element {
             src={motecIem}
             alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
             className="w-4/5 min-w-56 max-w-80"
-          ></Image>
+          />
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
             <ResumeSectionText>
@@ -154,12 +156,41 @@ export default function Home(): JSX.Element {
           alt=""
           fill={true}
           className="-z-10 object-cover object-center brightness-50"
-        ></Image>
-        <ResumeSectionH1 className="left-0 right-0 mx-auto w-min border-white text-white">
+        />
+        <ResumeSectionH1 className="mx-auto w-min border-white text-center text-white">
           PORTFOLIO
         </ResumeSectionH1>
       </div>
-      <div className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white"></div>
+      <div className="flex flex-col items-center gap-10 bg-main-slate p-14 text-white">
+        <div className="flex flex-col items-center gap-5">
+          <Image
+            src={musaicLogo}
+            alt="Musaic Logo"
+            width={400}
+            className="max-w-full px-8 shadow-white"
+          />
+          <ResumeSectionText>
+            Musaic was a visualization tool that aimed to help Spotify listeners
+            input their listening history and tracked various characteristics of
+            their music taste and how they changed throughout the years.
+            {"\n\n"}It was a final project for CS467 (Social Visualization) and
+            I developed much of the frontend design. {"\n\n"} Check out the
+            project{" "}
+            <a
+              href="https://musaic-psi.vercel.app/visualization"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:brightness-75"
+            >
+              <u className="underline-offset-2">here</u> 🔗
+            </a>
+          </ResumeSectionText>
+        </div>
+        <Image src={fancySeparator} alt="" width={175} />
+        <div className="flex flex-col items-center gap-5">
+          <video src="/breakout_ddqn_video.mp4" />
+        </div>
+      </div>
     </>
   );
 }
