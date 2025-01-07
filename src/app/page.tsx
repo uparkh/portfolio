@@ -11,20 +11,20 @@ import linkedinLogo from "/public/linkedin-circle.svg";
 import uiucCsLogo from "/public/uiuc-cs-logo.png";
 import codehsLogo from "/public/codehs-logo.png";
 import motecIem from "/public/motec-iem.png";
+import cyberscape from "/public/cyberscape.png";
 
 import { JSX } from "react";
 
 export default function Home(): JSX.Element {
   return (
     <>
-      {/* <div className="flex h-screen max-h-[900px] min-h-[560px] min-w-[441px] flex-col overflow-hidden"> */}
-      <div className="flex h-screen max-h-[870px] min-h-[560px] flex-col overflow-hidden">
+      <div className="flex h-screen max-h-[54.375rem] min-h-[35rem] flex-col overflow-hidden">
         <Navbar />
         <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
           <div className="absolute bottom-0 left-0 right-0 top-1 -z-10 mx-auto max-w-[30rem] origin-top translate-x-4 -scale-x-125 scale-y-125">
             <Image src={portrait} alt="Upanshu's portrait" priority />
           </div>
-          <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((480px/100vw)*7deg)] bg-black text-white opacity-70"></div>
+          <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((30rem/100vw)*7deg)] bg-black text-white opacity-70"></div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-1/3 min-h-60 grid-cols-6 gap-3 p-6">
             <div className="col-span-5 flex flex-col justify-evenly p-4 pt-14 font-raleway font-bold text-white">
               <p className="text-xl">Hi, I am</p>
@@ -148,6 +148,18 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
+      <div className="relative p-14">
+        <Image
+          src={cyberscape}
+          alt=""
+          fill={true}
+          className="-z-10 object-cover object-center brightness-50"
+        ></Image>
+        <ResumeSectionH1 className="left-0 right-0 mx-auto w-min border-white text-white">
+          PORTFOLIO
+        </ResumeSectionH1>
+      </div>
+      <div className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white"></div>
     </>
   );
 }
