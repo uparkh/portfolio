@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
       <div className="flex h-screen max-h-[37.5rem] min-h-[35rem] flex-col overflow-hidden">
         <Navbar />
         <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
-          <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[30rem] origin-top -scale-x-100 pt-4">
+          <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
             <Image src={portrait} alt="Upanshu's portrait" priority />
           </div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-min min-h-60 grid-cols-6 justify-end gap-3 p-4">
