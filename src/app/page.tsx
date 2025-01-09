@@ -210,8 +210,34 @@ export default function Home(): JSX.Element {
           className="w-5/6 max-w-52 antialiased"
         />
         <div className="flex flex-col items-center gap-5">
-          <video src="/breakout_ddqn_video.mp4" />
+          <video
+            src="/breakout_ddqn_video.mp4"
+            autoPlay
+            loop
+            disablePictureInPicture
+            controls
+            playsInline
+            muted
+            className="w-[160px] rounded-xl"
+          />
+          <div>
+            <ResumeExperienceH2 className="border-white">
+              Atari Breakout AI
+            </ResumeExperienceH2>
+            <ResumeSectionText>
+              In the CS444 Deep Learning for Computer Vision class, we learned
+              all about about computer vision history, theory, and application,
+              from classical gradient descent methods to present day innovations
+              like transformers.{"\n\n"}We also learned about Deep Reinforcement
+              Learning and applied the Double DQN algorithm to create an AI that
+              can play the classic arcade game Atari Breakout! Results are shown
+              in the video to the right.
+            </ResumeSectionText>
+          </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black">
+        <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
       </div>
     </>
   );
