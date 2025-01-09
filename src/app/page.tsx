@@ -2,6 +2,7 @@ import Navbar from "./_components/navbar";
 import ResumeSectionH1 from "./_components/resume-section-h1";
 import ResumeSectionText from "./_components/resume-section-text";
 import ResumeExperienceH2 from "./_components/resume-experience-h2";
+import ResumeExternalLink from "./_components/resume-link";
 
 import Image from "next/image";
 import portrait from "/public/boss.png";
@@ -15,6 +16,7 @@ import cyberscape from "/public/cyberscape.png";
 import musaicLogo from "/public/musaic-logo.svg";
 import fancySeparator from "/public/fancy-separator.png";
 import customHeader from "/public/custom-header.png";
+import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 
 import { JSX } from "react";
 
@@ -193,14 +195,12 @@ export default function Home(): JSX.Element {
             {"\n\n"}It was a final project for CS467 (Social Visualization) and
             I developed much of the frontend design. {"\n\n"} Check out the
             project{" "}
-            <a
+            <ResumeExternalLink
               href="https://musaic-psi.vercel.app/visualization"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="hover:brightness-75"
+              after="🔗"
             >
-              <u className="underline-offset-2">here</u> 🔗
-            </a>
+              here
+            </ResumeExternalLink>
           </ResumeSectionText>
         </div>
         <Image
@@ -238,6 +238,37 @@ export default function Home(): JSX.Element {
       </div>
       <div className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black">
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
+        <Image
+          src={altProfessionalPic}
+          alt="Upanshu's professional picture"
+          className="w-4/5 max-w-48 rounded-full"
+          sizes="12rem"
+        />
+        <ResumeSectionText>
+          Feel free to contact me at my email below for any reason, whether it’s
+          about any of my background listed above, professional inquiries, or
+          just to say hi! {"\n\n"}Check out my{" "}
+          <ResumeExternalLink href="#" after="📝">
+            Resume
+          </ResumeExternalLink>{" "}
+          if you would like to as well.
+        </ResumeSectionText>
+        <a
+          className="flex items-center gap-2 hover:opacity-80"
+          href="mailto:parekhupanshu@gmail.com"
+        >
+          <div className="bg-neutral-400 p-1 shadow-md shadow-neutral-500">
+            <Image
+              src={atSign}
+              alt="At sign to Upanshu's email"
+              className="w-2vw min-w-5 invert"
+              sizes="2vw"
+            />
+          </div>
+          <p className="text-md font-raleway font-medium underline underline-offset-2">
+            parekhupanshu@gmail.com
+          </p>
+        </a>
       </div>
     </>
   );
