@@ -18,7 +18,7 @@ export default function ResumeExternalLink({
       rel="noreferrer noopener"
       className={`hover:opacity-80 ${className}}`}
     >
-      <u className="underline-offset-2">{children}</u> {after}
+      <span className="underline underline-offset-2">{children}</span> {after}
     </a>
   );
 }

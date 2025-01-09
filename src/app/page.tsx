@@ -91,27 +91,30 @@ export default function Home(): JSX.Element {
           sizes="12rem"
         />
         <ResumeSectionText>
-          Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
-          University of Illinois at Urbana-Champaign (UIUC) studying Computer
-          Science. I am currently working on web-based projects and plan on
-          diving into some low level project soon. I have experience with:
-          <ul className="my-2 list-inside list-disc">
-            <li>Python (Pytorch, Numpy, etc)</li>
-            <li>Containerization and Virtualization</li>
-            <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
-            <li>Unix / Linux / C</li>
-            <li>Java</li>
-          </ul>
-          I have dabbled in but want to get stronger at:
-          <ul className="my-2 list-inside list-disc">
-            <li>C++</li>
-            <li>SQL / Databases</li>
-            <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
-            <li>Game Development</li>
-          </ul>
-          My personal interests include Formula 1 🏎️, astronomy 🔭, videogames
-          👾, and weightlifting 🏋🏽‍♂️. Feel free to bring these up in conversation
-          if we have any shared interests!
+          <p>
+            Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
+            the University of Illinois at Urbana-Champaign (UIUC) studying
+            Computer Science. I am currently working on web-based projects and
+            plan on diving into some low level project soon. I have experience
+            with:
+            <ul className="my-2 list-inside list-disc">
+              <li>Python (Pytorch, Numpy, etc)</li>
+              <li>Containerization and Virtualization</li>
+              <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
+              <li>Unix / Linux / C</li>
+              <li>Java</li>
+            </ul>
+            I have dabbled in but want to get stronger at:
+            <ul className="my-2 list-inside list-disc">
+              <li>C++</li>
+              <li>SQL / Databases</li>
+              <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
+              <li>Game Development</li>
+            </ul>
+            My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
+            videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
+            conversation if we have any shared interests!
+          </p>
         </ResumeSectionText>
       </div>
       <div className="bg-main-ivory p-14 text-black">
@@ -126,13 +129,15 @@ export default function Home(): JSX.Element {
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
             <ResumeSectionText>
-              Over the summer of 2024 I worked as a Software Engineer Intern at
-              CodeHS, a company that develops educational Computer Science
-              material for millions of students. {"\n\n"} I worked on
-              prototyping a search engine that performs fast similarity search
-              on a word embedding database, as well as a realtime quiz
-              leaderboard prototype for Questions of the Day (similar to
-              Kahoot!).
+              <p>
+                Over the summer of 2024 I worked as a Software Engineer Intern
+                at CodeHS, a company that develops educational Computer Science
+                material for millions of students. {"\n\n"} I worked on
+                prototyping a search engine that performs fast similarity search
+                on a word embedding database, as well as a realtime quiz
+                leaderboard prototype for Questions of the Day (similar to
+                Kahoot!).
+              </p>
             </ResumeSectionText>
           </div>
         </div>
@@ -149,18 +154,20 @@ export default function Home(): JSX.Element {
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
             <ResumeSectionText>
-              Illini Electric Motorsports is about developing a racecar from
-              scratch every year to compete internationally against other
-              universities’ formula-spec cars. {"\n\n"} I was a member of the
-              Data Acquisition and Quantitative Analysis team from Jan-Apr 2024,
-              and saved the team $700+ by developing an in-house Python file
-              format converter for the MoTeC i2 telemetry software (branching
-              from existing open-source tools).
+              <p>
+                Illini Electric Motorsports is about developing a racecar from
+                scratch every year to compete internationally against other
+                universities’ formula-spec cars. {"\n\n"} I was a member of the
+                Data Acquisition and Quantitative Analysis team from January to
+                April 2024, and saved the team more than $700 by developing an
+                in-house Python file format converter for the MoTeC i2 telemetry
+                software (branching from existing open-source tools).
+              </p>
             </ResumeSectionText>
           </div>
         </div>
       </div>
-      <div className="relative p-14">
+      <div className="relative p-12">
         <Image
           src={cyberscape}
           alt=""
@@ -180,18 +187,23 @@ export default function Home(): JSX.Element {
             sizes="16rem"
           />
           <ResumeSectionText>
-            Musaic was a visualization tool that aimed to help Spotify listeners
-            input their listening history and tracked various characteristics of
-            their music taste and how they changed throughout the years.
-            {"\n\n"}It was a final project for CS467 (Social Visualization) and
-            I developed much of the frontend design. {"\n\n"} Check out the
-            project{" "}
-            <ResumeExternalLink
-              href="https://musaic-psi.vercel.app/visualization"
-              after="🔗"
-            >
-              here
-            </ResumeExternalLink>
+            <p>
+              Musaic was a visualization tool that aimed to help Spotify
+              listeners input their listening history and tracked various
+              characteristics of their music taste and how they changed
+              throughout the years.
+              <br /> <br />
+              It was a final project for CS467 (Social Visualization) and I
+              developed much of the frontend design.
+              <br /> <br />
+              Check out the project{" "}
+              <ResumeExternalLink
+                href="https://musaic-psi.vercel.app/visualization"
+                after="🔗"
+              >
+                here
+              </ResumeExternalLink>
+            </p>
           </ResumeSectionText>
         </div>
         <Image
@@ -216,13 +228,15 @@ export default function Home(): JSX.Element {
               Atari Breakout AI
             </ResumeExperienceH2>
             <ResumeSectionText>
-              In the CS444 Deep Learning for Computer Vision class, we learned
-              all about about computer vision history, theory, and application,
-              from classical gradient descent methods to present day innovations
-              like transformers.{"\n\n"}We also learned about Deep Reinforcement
-              Learning and applied the Double DQN algorithm to create an AI that
-              can play the classic arcade game Atari Breakout! Results are shown
-              in the video to the right.
+              <p>
+                In the CS444 Deep Learning for Computer Vision class, we learned
+                all about about computer vision history, theory, and
+                application, from classical gradient descent methods to present
+                day innovations like transformers.{"\n\n"}We also learned about
+                Deep Reinforcement Learning and applied the Double DQN algorithm
+                to create an AI that can play the classic arcade game Atari
+                Breakout! Results are shown in the video to the right.
+              </p>
             </ResumeSectionText>
           </div>
         </div>
@@ -236,13 +250,17 @@ export default function Home(): JSX.Element {
           sizes="12rem"
         />
         <ResumeSectionText>
-          Feel free to contact me at my email below for any reason, whether it’s
-          about any of my background listed above, professional inquiries, or
-          just to say hi! {"\n\n"}Check out my{" "}
-          <ResumeExternalLink href="#" after="📝">
-            Resume
-          </ResumeExternalLink>{" "}
-          if you would like to as well.
+          <p>
+            Feel free to contact me at my email below for any reason, whether
+            it’s about any of my background listed above, professional
+            inquiries, or just to say hi!
+            <br /> <br />
+            Check out my{" "}
+            <ResumeExternalLink href="#" after="📝">
+              Resume
+            </ResumeExternalLink>{" "}
+            if you would like to as well.
+          </p>
         </ResumeSectionText>
         <a
           className="flex items-center gap-2 hover:opacity-80"
@@ -291,8 +309,8 @@ export default function Home(): JSX.Element {
             />
           </ResumeExternalLink>
         </div>
-        <p className="whitespace-pre-line text-center font-raleway text-sm font-medium">
-          Design inspired by Tomasz Gajda. {"\n"} Customized and developed by
+        <p className="text-center font-raleway text-sm font-medium">
+          Design inspired by Tomasz Gajda. <br /> Customized and developed by
           Upanshu Parekh.
         </p>
       </div>
