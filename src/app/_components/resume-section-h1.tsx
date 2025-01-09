@@ -9,7 +9,7 @@ export default function ResumeSectionH1({
 }>): JSX.Element {
   return (
     <div className={`border-4 p-3 px-5 ${className}`}>
-      <h1 className="font-montserrat tracking-canyon text-center text-xl font-bold">
+      <h1 className="hyphens-auto text-center font-montserrat text-xl font-bold tracking-canyon">
         {children}
       </h1>
     </div>
