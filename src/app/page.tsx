@@ -14,6 +14,7 @@ import motecIem from "/public/motec-iem.png";
 import cyberscape from "/public/cyberscape.png";
 import musaicLogo from "/public/musaic-logo.svg";
 import fancySeparator from "/public/fancy-separator.png";
+import customHeader from "/public/custom-header.png";
 
 import { JSX } from "react";
 
@@ -26,8 +27,13 @@ export default function Home(): JSX.Element {
           <div className="absolute bottom-0 left-0 right-0 top-1 -z-10 mx-auto max-w-[30rem] origin-top translate-x-4 -scale-x-125 scale-y-125">
             <Image src={portrait} alt="Upanshu's portrait" priority />
           </div>
-          <div className="absolute inset-x-0 bottom-0 z-0 h-2/5 min-h-72 w-[200%] min-w-44 origin-bottom-right -rotate-[calc((30rem/100vw)*7deg)] bg-black text-white opacity-70"></div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-1/3 min-h-60 grid-cols-6 gap-3 p-6">
+            <Image
+              src={customHeader}
+              alt=""
+              fill={true}
+              className="-z-10 antialiased opacity-70"
+            />
             <div className="col-span-5 flex flex-col justify-evenly p-4 pt-14 font-raleway font-bold text-white shadow-white drop-shadow-lg">
               <p className="text-xl">Hi, I am</p>
               <h1 className="text-4xl">Upanshu Parekh</h1>

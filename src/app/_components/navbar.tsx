@@ -1,22 +1,23 @@
 import Image from "next/image";
+import upanshuParekhLogo from "/public/upanshu-parekh-logo.svg";
+import barsSolid from "/public/font-awesome/bars-solid.svg";
 import { JSX } from "react";
 
 export default function Navbar(): JSX.Element {
   return (
     <div className="flex items-center justify-between border-b-2 border-neutral-300 bg-gray-950 px-6 py-4">
       <Image
-        src="/upanshu-parekh-logo.svg"
+        src={upanshuParekhLogo}
         alt="Upanshu Parekh's Logo"
-        width={32}
-        height={32}
+        sizes="10vw"
+        className="w-1/15 min-w-9"
         priority
       />
       <Image
-        src="/font-awesome/bars-solid.svg"
+        src={barsSolid}
         alt="Menu Bars"
-        width={32}
-        height={32}
-        className="invert"
+        sizes="10vw"
+        className="w-1/15 min-w-9 invert"
         priority
       />
     </div>

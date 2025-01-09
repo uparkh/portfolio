@@ -21,6 +21,9 @@ export default {
         "open-sans": "var(--font-open-sans), sans-serif",
         overpass: "var(--font-overpass), sans-serif",
       },
+      width: {
+        "1/15": "6.666666666666667%",
+      },
     },
   },
   plugins: [],
