@@ -16,7 +16,7 @@ export default function ResumeExternalLink({
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      className={`hover:opacity-80 text-inherit${className}}`}
+      className={`hover:opacity-80 ${className}}`}
     >
       <u className="underline-offset-2">{children}</u> {after}
     </a>

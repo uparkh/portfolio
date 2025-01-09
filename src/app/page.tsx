@@ -17,6 +17,7 @@ import musaicLogo from "/public/musaic-logo.svg";
 import fancySeparator from "/public/fancy-separator.png";
 import customHeader from "/public/custom-header.png";
 import altProfessionalPic from "/public/alt-professional-pic.jpeg";
+import doubleUpArrow from "/public/double-up-arrow.svg";
 
 import { JSX } from "react";
 
@@ -49,7 +50,7 @@ export default function Home(): JSX.Element {
             <div className="flex flex-col items-center justify-around">
               <a
                 href="mailto:parekhupanshu@gmail.com"
-                className="hover:brightness-75"
+                className="hover:opacity-80"
               >
                 <Image
                   src={atSign}
@@ -59,34 +60,24 @@ export default function Home(): JSX.Element {
                   priority
                 />
               </a>
-              <a
-                href="https://www.github.com/blc5-33"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="hover:brightness-75"
-              >
+              <ResumeExternalLink href="https://www.github.com/blc5-33">
                 <Image
                   src={githubLogo}
                   alt="Github logo to Upanshu's Github account"
-                  sizes="5vw"
                   className="w-5vw min-w-8"
+                  sizes="5vw"
                   priority
                 />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/uparkh/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="hover:brightness-75"
-              >
+              </ResumeExternalLink>
+              <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
                 <Image
                   src={linkedinLogo}
                   alt="Linkedin logo to Upanshu's Linkedin account"
-                  sizes="5vw"
                   className="w-5vw min-w-8"
+                  sizes="5vw"
                   priority
                 />
-              </a>
+              </ResumeExternalLink>
             </div>
           </div>
         </div>
@@ -96,8 +87,8 @@ export default function Home(): JSX.Element {
         <Image
           src={uiucCsLogo}
           alt="UIUC CS Logo"
-          sizes="12rem"
           className="w-3/5 max-w-48 rounded-2xl"
+          sizes="12rem"
         />
         <ResumeSectionText>
           Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
@@ -118,9 +109,9 @@ export default function Home(): JSX.Element {
             <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
             <li>Game Development</li>
           </ul>
-          My personal interests include: Formula 1, astronomy, videogames,
-          weightlifting. Feel free to bring these up in conversation if we have
-          any shared interests!
+          My personal interests include Formula 1 🏎️, astronomy 🔭, videogames
+          👾, and weightlifting 🏋🏽‍♂️. Feel free to bring these up in conversation
+          if we have any shared interests!
         </ResumeSectionText>
       </div>
       <div className="bg-main-ivory p-14 text-black">
@@ -129,8 +120,8 @@ export default function Home(): JSX.Element {
           <Image
             src={codehsLogo}
             alt="CodeHS Logo"
-            sizes="11rem"
             className="w-3/5 max-w-44"
+            sizes="11rem"
           />
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
@@ -152,8 +143,8 @@ export default function Home(): JSX.Element {
           <Image
             src={motecIem}
             alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
-            sizes="18rem"
             className="w-full max-w-72"
+            sizes="18rem"
           />
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
@@ -185,8 +176,8 @@ export default function Home(): JSX.Element {
           <Image
             src={musaicLogo}
             alt="Musaic Logo"
-            sizes="16rem"
             className="w-full max-w-64 shadow-white"
+            sizes="16rem"
           />
           <ResumeSectionText>
             Musaic was a visualization tool that aimed to help Spotify listeners
@@ -206,8 +197,8 @@ export default function Home(): JSX.Element {
         <Image
           src={fancySeparator}
           alt=""
-          sizes="13rem"
           className="w-5/6 max-w-52 antialiased"
+          sizes="13rem"
         />
         <div className="flex flex-col items-center gap-5">
           <video
@@ -269,6 +260,41 @@ export default function Home(): JSX.Element {
             parekhupanshu@gmail.com
           </p>
         </a>
+      </div>
+      <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
+        <div className="flex flex-col items-center gap-1">
+          <Image
+            src={doubleUpArrow}
+            alt=""
+            className="w-5vw min-w-6"
+            sizes="5vw"
+          />
+          <p className="text-md font-montserrat font-bold capitalize tracking-widest">
+            BACK TO TOP
+          </p>
+        </div>
+        <div className="flex items-center justify-evenly gap-8">
+          <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
+            <Image
+              src={linkedinLogo}
+              alt="Linkedin logo to Upanshu's Linkedin account"
+              className="w-5vw min-w-8"
+              sizes="5vw"
+            />
+          </ResumeExternalLink>
+          <ResumeExternalLink href="https://www.github.com/blc5-33">
+            <Image
+              src={githubLogo}
+              alt="Github logo to Upanshu's Github account"
+              className="w-5vw min-w-8"
+              sizes="5vw"
+            />
+          </ResumeExternalLink>
+        </div>
+        <p className="whitespace-pre-line text-center font-raleway text-sm font-medium">
+          Design inspired by Tomasz Gajda. {"\n"} Customized and developed by
+          Upanshu Parekh.
+        </p>
       </div>
     </>
   );
