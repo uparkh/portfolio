@@ -25,7 +25,12 @@ export default function Home(): JSX.Element {
         <Navbar />
         <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
           <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
-            <Image src={portrait} alt="Upanshu's portrait" priority />
+            <Image
+              src={portrait}
+              alt="Upanshu's portrait"
+              priority
+              sizes="25rem"
+            />
           </div>
           <div className="absolute inset-x-0 bottom-0 z-10 grid h-min min-h-60 grid-cols-6 justify-end gap-3 p-4">
             <Image
@@ -47,7 +52,8 @@ export default function Home(): JSX.Element {
                 <Image
                   src={atSign}
                   alt="At sign to Upanshu's email"
-                  className="w-8"
+                  className="w-5vw min-w-8"
+                  sizes="5vw"
                   priority
                 />
               </a>
@@ -60,7 +66,8 @@ export default function Home(): JSX.Element {
                 <Image
                   src={githubLogo}
                   alt="Github logo to Upanshu's Github account"
-                  className="w-8"
+                  sizes="5vw"
+                  className="w-5vw min-w-8"
                   priority
                 />
               </a>
@@ -73,7 +80,8 @@ export default function Home(): JSX.Element {
                 <Image
                   src={linkedinLogo}
                   alt="Linkedin logo to Upanshu's Linkedin account"
-                  className="w-8"
+                  sizes="5vw"
+                  className="w-5vw min-w-8"
                   priority
                 />
               </a>
@@ -86,7 +94,8 @@ export default function Home(): JSX.Element {
         <Image
           src={uiucCsLogo}
           alt="UIUC CS Logo"
-          className="w-3/5 min-w-36 max-w-48 rounded-2xl"
+          sizes="12rem"
+          className="w-3/5 max-w-48 rounded-2xl"
         />
         <ResumeSectionText>
           Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at the
@@ -118,7 +127,8 @@ export default function Home(): JSX.Element {
           <Image
             src={codehsLogo}
             alt="CodeHS Logo"
-            className="w-1/2 min-w-40 max-w-52 rounded-lg"
+            sizes="11rem"
+            className="w-3/5 max-w-44"
           />
           <div>
             <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
@@ -140,7 +150,8 @@ export default function Home(): JSX.Element {
           <Image
             src={motecIem}
             alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
-            className="w-4/5 min-w-56 max-w-80"
+            sizes="18rem"
+            className="w-full max-w-72"
           />
           <div>
             <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
@@ -172,8 +183,8 @@ export default function Home(): JSX.Element {
           <Image
             src={musaicLogo}
             alt="Musaic Logo"
-            width={400}
-            className="max-w-full px-8 shadow-white"
+            sizes="16rem"
+            className="w-full max-w-64 shadow-white"
           />
           <ResumeSectionText>
             Musaic was a visualization tool that aimed to help Spotify listeners
@@ -192,7 +203,12 @@ export default function Home(): JSX.Element {
             </a>
           </ResumeSectionText>
         </div>
-        <Image src={fancySeparator} alt="" width={175} />
+        <Image
+          src={fancySeparator}
+          alt=""
+          sizes="13rem"
+          className="w-5/6 max-w-52 antialiased"
+        />
         <div className="flex flex-col items-center gap-5">
           <video src="/breakout_ddqn_video.mp4" />
         </div>

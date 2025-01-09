@@ -22,7 +22,11 @@ export default {
         overpass: "var(--font-overpass), sans-serif",
       },
       width: {
+        "1/8": "12.5%",
+        "1/10": "10%",
         "1/15": "6.666666666666667%",
+        "1/20": "5%",
+        "5vw": "5vw",
       },
     },
   },
