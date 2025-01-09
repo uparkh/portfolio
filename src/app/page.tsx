@@ -270,8 +270,8 @@ export default function Home(): JSX.Element {
             <Image
               src={atSign}
               alt="At sign to Upanshu's email"
-              className="w-2vw min-w-5 invert"
-              sizes="2vw"
+              className="w-[3vw] min-w-5 invert"
+              sizes="3vw"
             />
           </div>
           <p className="text-md font-raleway font-medium underline underline-offset-2">
