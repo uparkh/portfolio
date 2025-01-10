@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import type { Metadata } from "next";
 import { Raleway, Montserrat, Open_Sans, Overpass } from "next/font/google";
+import Navbar from "./_components/navbar";
 import "./globals.css";
 
 const raleway = Raleway({
@@ -39,6 +40,7 @@ export default function RootLayout({
         <body
           className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} ${overpass.variable} antialiased`}
         >
+          <Navbar />
           {children}
         </body>
       </StrictMode>

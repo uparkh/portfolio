@@ -1,4 +1,3 @@
-import Navbar from "./_components/navbar";
 import ResumeSectionH1 from "./_components/resume-section-h1";
 import ResumeSectionText from "./_components/resume-section-text";
 import ResumeExperienceH2 from "./_components/resume-experience-h2";
@@ -24,61 +23,58 @@ import { JSX } from "react";
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="flex h-screen max-h-[37.5rem] min-h-[35rem] flex-col overflow-hidden">
-        <Navbar />
-        <div className="relative z-0 grow bg-gradient-to-b from-neutral-800 to-neutral-500">
-          <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
-            <Image
-              src={portrait}
-              alt="Upanshu's portrait"
-              priority
-              sizes="25rem"
-            />
+      <div className="relative z-0 h-[80vh] max-h-[37.5rem] min-h-[35rem] grow overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem]">
+        <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
+          <Image
+            src={portrait}
+            alt="Upanshu's portrait"
+            priority
+            sizes="25rem"
+          />
+        </div>
+        <div className="absolute inset-x-0 bottom-0 z-10 grid h-min min-h-60 grid-cols-6 justify-end gap-3 p-4">
+          <Image
+            src={customHeader}
+            alt=""
+            fill={true}
+            className="-z-10 antialiased opacity-70"
+          />
+          <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
+            <p className="text-xl">Hi, I am</p>
+            <h1 className="text-4xl">Upanshu Parekh</h1>
+            <h4 className="text-lg">Aspiring Software Engineer</h4>
           </div>
-          <div className="absolute inset-x-0 bottom-0 z-10 grid h-min min-h-60 grid-cols-6 justify-end gap-3 p-4">
-            <Image
-              src={customHeader}
-              alt=""
-              fill={true}
-              className="-z-10 antialiased opacity-70"
-            />
-            <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
-              <p className="text-xl">Hi, I am</p>
-              <h1 className="text-4xl">Upanshu Parekh</h1>
-              <h4 className="text-lg">Aspiring Software Engineer</h4>
-            </div>
-            <div className="flex flex-col items-center justify-around">
-              <a
-                href="mailto:parekhupanshu@gmail.com"
-                className="hover:opacity-80"
-              >
-                <Image
-                  src={atSign}
-                  alt="At sign to Upanshu's email"
-                  className="w-5vw min-w-8"
-                  sizes="5vw"
-                  priority
-                />
-              </a>
-              <ResumeExternalLink href="https://www.github.com/blc5-33">
-                <Image
-                  src={githubLogo}
-                  alt="Github logo to Upanshu's Github account"
-                  className="w-5vw min-w-8"
-                  sizes="5vw"
-                  priority
-                />
-              </ResumeExternalLink>
-              <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
-                <Image
-                  src={linkedinLogo}
-                  alt="Linkedin logo to Upanshu's Linkedin account"
-                  className="w-5vw min-w-8"
-                  sizes="5vw"
-                  priority
-                />
-              </ResumeExternalLink>
-            </div>
+          <div className="flex flex-col items-center justify-around">
+            <a
+              href="mailto:parekhupanshu@gmail.com"
+              className="hover:opacity-80"
+            >
+              <Image
+                src={atSign}
+                alt="At sign to Upanshu's email"
+                className="w-5vw min-w-8"
+                sizes="5vw"
+                priority
+              />
+            </a>
+            <ResumeExternalLink href="https://www.github.com/blc5-33">
+              <Image
+                src={githubLogo}
+                alt="Github logo to Upanshu's Github account"
+                className="w-5vw min-w-8"
+                sizes="5vw"
+                priority
+              />
+            </ResumeExternalLink>
+            <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
+              <Image
+                src={linkedinLogo}
+                alt="Linkedin logo to Upanshu's Linkedin account"
+                className="w-5vw min-w-8"
+                sizes="5vw"
+                priority
+              />
+            </ResumeExternalLink>
           </div>
         </div>
       </div>
