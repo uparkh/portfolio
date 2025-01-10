@@ -8,15 +8,23 @@ import closeXSolid from "/public/font-awesome/x-solid.svg";
 import { JSX, useState } from "react";
 
 export default function Navbar(): JSX.Element {
-  const [isMenuOpen, setDropdownActive] = useState<boolean>(false);
+  enum MenuState {
+    LOADED,
+    CLOSED,
+    OPEN,
+  }
+
+  const [menuState, setMenuState] = useState<MenuState>(MenuState.LOADED);
 
   function handleDropdown(): void {
-    setDropdownActive(!isMenuOpen);
+    setMenuState(
+      menuState === MenuState.OPEN ? MenuState.CLOSED : MenuState.OPEN,
+    );
   }
 
   return (
     <nav
-      className={`${isMenuOpen ? "fixed" : "absolute"} z-40 w-screen overflow-visible`}
+      className={`${menuState === MenuState.OPEN ? "fixed" : "absolute"} z-40 w-screen overflow-visible`}
     >
       <div className="relative z-20 flex items-center justify-between border-b-2 border-neutral-300 bg-gray-950 px-6 py-4">
         <Image
@@ -31,11 +39,11 @@ export default function Navbar(): JSX.Element {
           onClick={handleDropdown}
         >
           <p className="font-raleway text-lg font-bold text-white">
-            {isMenuOpen ? "CLOSE" : "MENU"}
+            {menuState === MenuState.OPEN ? "CLOSE" : "MENU"}
           </p>
           <Image
-            src={isMenuOpen ? closeXSolid : barsSolid}
-            alt={isMenuOpen ? "Close Menu" : "Open Menu"}
+            src={menuState === MenuState.OPEN ? closeXSolid : barsSolid}
+            alt={menuState === MenuState.OPEN ? "Close Menu" : "Open Menu"}
             sizes="2.25rem"
             className="max-h-9 w-[9vw] invert"
             priority
@@ -43,10 +51,22 @@ export default function Navbar(): JSX.Element {
         </button>
       </div>
       <div
-        className={`${isMenuOpen ? "fade-in" : "fade-out"} absolute -z-10 h-screen w-screen bg-black bg-opacity-60`}
+        className={`${
+          menuState === MenuState.LOADED
+            ? "hidden"
+            : menuState === MenuState.OPEN
+              ? "fade-in"
+              : "fade-out"
+        } absolute -z-10 h-screen w-screen bg-black bg-opacity-60`}
       ></div>
       <ul
-        className={`${isMenuOpen ? "dropdown-active" : "dropdown-inactive"} z-0 flex flex-col bg-gray-950 bg-opacity-75 text-center font-montserrat text-lg font-bold tracking-widest text-white`}
+        className={`${
+          menuState === MenuState.LOADED
+            ? "hidden"
+            : menuState === MenuState.OPEN
+              ? "dropdown-active"
+              : "dropdown-inactive"
+        } z-0 flex flex-col bg-gray-950 bg-opacity-75 text-center font-montserrat text-lg font-bold tracking-widest text-white`}
       >
         <a href="#about-me">
           <li className="border-1 border-neutral-300 px-6 py-4">ABOUT ME</li>
