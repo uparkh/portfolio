@@ -1,3 +1,4 @@
+import { StrictMode } from "react";
 import type { Metadata } from "next";
 import { Raleway, Montserrat, Open_Sans, Overpass } from "next/font/google";
 import "./globals.css";
@@ -34,11 +35,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} ${overpass.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <StrictMode>
+        <body
+          className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} ${overpass.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </StrictMode>
     </html>
   );
 }

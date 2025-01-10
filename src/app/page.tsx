@@ -97,20 +97,22 @@ export default function Home(): JSX.Element {
             Computer Science. I am currently working on web-based projects and
             plan on diving into some low level project soon. I have experience
             with:
-            <ul className="my-2 list-inside list-disc">
-              <li>Python (Pytorch, Numpy, etc)</li>
-              <li>Containerization and Virtualization</li>
-              <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
-              <li>Unix / Linux / C</li>
-              <li>Java</li>
-            </ul>
-            I have dabbled in but want to get stronger at:
-            <ul className="my-2 list-inside list-disc">
-              <li>C++</li>
-              <li>SQL / Databases</li>
-              <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
-              <li>Game Development</li>
-            </ul>
+          </p>
+          <ul className="my-2 list-inside list-disc">
+            <li>Python (Pytorch, Numpy, etc)</li>
+            <li>Containerization and Virtualization</li>
+            <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
+            <li>Unix / Linux / C</li>
+            <li>Java</li>
+          </ul>
+          <p>I have dabbled in but want to get stronger at:</p>
+          <ul className="my-2 list-inside list-disc">
+            <li>C++</li>
+            <li>SQL / Databases</li>
+            <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
+            <li>Game Development</li>
+          </ul>
+          <p>
             My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
             videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
             conversation if we have any shared interests!
