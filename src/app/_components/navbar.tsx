@@ -6,8 +6,8 @@ import { JSX } from "react";
 
 export default function Navbar(): JSX.Element {
   return (
-    <nav className="absolute z-50 w-screen overflow-visible">
-      <div className="flex items-center justify-between border-b-2 border-neutral-300 bg-gray-950 px-6 py-4">
+    <nav className="absolute z-40 w-screen overflow-visible">
+      <div className="relative z-20 flex items-center justify-between border-b-2 border-neutral-300 bg-gray-950 px-6 py-4">
         <Image
           src={upanshuParekhLogo}
           alt="Upanshu Parekh's Logo"
@@ -27,18 +27,18 @@ export default function Navbar(): JSX.Element {
         </button>
       </div>
       <div className="absolute -z-10 h-screen w-screen bg-black bg-opacity-60"></div>
-      <ul className="flex flex-col bg-gray-950 bg-opacity-85 text-center font-montserrat text-lg font-bold tracking-widest text-white">
-        <li className="border-1 border-neutral-300 px-6 py-4">
-          <a href="#about-me">ABOUT ME</a>
-        </li>
-        <li className="border-1 border-neutral-300 px-6 py-4">
-          <a href="#experience">EXPERIENCE</a>
-        </li>
-        <li className="border-1 border-neutral-300 px-6 py-4">
-          <a href="#portfolio">PORTFOLIO</a>
-        </li>
-        <li className="border-1 border-neutral-300 bg-neutral-600 bg-opacity-40 px-6 py-4 text-white">
-          <a href="#" className="flex items-center justify-center gap-3">
+      <ul className="dropdown-active z-0 flex flex-col bg-gray-950 bg-opacity-85 text-center font-montserrat text-lg font-bold tracking-widest text-white">
+        <a href="#about-me">
+          <li className="border-1 border-neutral-300 px-6 py-4">ABOUT ME</li>
+        </a>
+        <a href="#experience">
+          <li className="border-1 border-neutral-300 px-6 py-4">EXPERIENCE</li>
+        </a>
+        <a href="#portfolio">
+          <li className="border-1 border-neutral-300 px-6 py-4">PORTFOLIO</li>
+        </a>
+        <a href="#">
+          <li className="border-1 flex items-center justify-center gap-3 border-neutral-300 bg-neutral-600 bg-opacity-40 px-6 py-4 text-white">
             RESUME
             <Image
               src={arrowFromBox}
@@ -47,11 +47,13 @@ export default function Navbar(): JSX.Element {
               className="w-5 invert"
               priority
             />
-          </a>
-        </li>
-        <li className="border-1 border-neutral-300 bg-neutral-300 px-6 py-4 text-black">
-          <a href="#contact">CONTACT</a>
-        </li>
+          </li>
+        </a>
+        <a href="#contact">
+          <li className="border-1 border-neutral-300 bg-neutral-300 px-6 py-4 text-black">
+            CONTACT
+          </li>
+        </a>
       </ul>
     </nav>
   );
