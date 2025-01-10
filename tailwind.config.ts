@@ -28,6 +28,9 @@ export default {
         "1/20": "5%",
         "5vw": "5vw",
       },
+      borderWidth: {
+        "1": "1px",
+      },
     },
   },
   plugins: [],
