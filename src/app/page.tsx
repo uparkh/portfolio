@@ -24,9 +24,14 @@ import ResponsiveImage from "./_components/responsive-next-image";
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="relative z-0 h-[80vh] max-h-[37.5rem] min-h-[35rem] grow overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem]">
-        <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
-          <Image src={portrait} alt="Upanshu's portrait" sizes="25rem" />
+      <div className="relative z-0 h-screen grow overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem]">
+        <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
+          <Image
+            src={portrait}
+            alt="Upanshu's portrait"
+            fill
+            className="-scale-x-100 object-cover object-top"
+          />
         </div>
         <div className="absolute inset-x-0 bottom-0 z-10 grid h-2/5 grid-cols-6 justify-end gap-3 p-4">
           <Image
@@ -38,9 +43,7 @@ export default function Home(): JSX.Element {
           <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
             <p className="text-xl">Hi, I am</p>
             <h1 className="text-4xl">Upanshu Parekh</h1>
-            <h4 className="text-lg">
-              Aspiring Software Engineer / Data Scientist
-            </h4>
+            <h4 className="text-lg">Aspiring Software Engineer</h4>
           </div>
           <div className="flex flex-col items-center justify-around">
             <a
