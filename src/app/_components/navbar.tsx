@@ -16,7 +16,7 @@ export default function Navbar(): JSX.Element {
 
   const [menuState, setMenuState] = useState<MenuState>(MenuState.LOADED);
 
-  function handleDropdown(): void {
+  function handleToggleMenu(): void {
     setMenuState(
       menuState === MenuState.OPEN ? MenuState.CLOSED : MenuState.OPEN,
     );
@@ -35,8 +35,8 @@ export default function Navbar(): JSX.Element {
           priority
         />
         <button
-          className="rounded-m flex items-center justify-end gap-3"
-          onClick={handleDropdown}
+          className="rounded-m flex items-center gap-3 hover:opacity-75"
+          onClick={handleToggleMenu}
         >
           <p className="font-raleway text-lg font-bold text-white">
             {menuState === MenuState.OPEN ? "CLOSE" : "MENU"}
@@ -51,6 +51,7 @@ export default function Navbar(): JSX.Element {
         </button>
       </div>
       <div
+        onClick={handleToggleMenu}
         className={`${
           menuState === MenuState.LOADED
             ? "hidden"
@@ -69,16 +70,22 @@ export default function Navbar(): JSX.Element {
         } z-0 flex flex-col bg-gray-950 bg-opacity-75 text-center font-montserrat text-lg font-bold tracking-widest text-white`}
       >
         <a href="#about-me">
-          <li className="border-1 border-neutral-300 px-6 py-4">ABOUT ME</li>
+          <li className="border-1 border-neutral-300 px-6 py-4 hover:opacity-60">
+            ABOUT ME
+          </li>
         </a>
         <a href="#experience">
-          <li className="border-1 border-neutral-300 px-6 py-4">EXPERIENCE</li>
+          <li className="border-1 border-neutral-300 px-6 py-4 hover:opacity-60">
+            EXPERIENCE
+          </li>
         </a>
         <a href="#portfolio">
-          <li className="border-1 border-neutral-300 px-6 py-4">PORTFOLIO</li>
+          <li className="border-1 border-neutral-300 px-6 py-4 hover:opacity-60">
+            PORTFOLIO
+          </li>
         </a>
         <a href="#">
-          <li className="border-1 flex items-center justify-center gap-3 border-neutral-300 bg-neutral-700 bg-opacity-75 px-6 py-4 text-white">
+          <li className="border-1 flex items-center justify-center gap-3 border-neutral-300 bg-neutral-700 bg-opacity-75 px-6 py-4 text-white hover:opacity-60">
             RESUME
             <Image
               src={arrowFromBox}
@@ -90,7 +97,7 @@ export default function Navbar(): JSX.Element {
           </li>
         </a>
         <a href="#contact">
-          <li className="border-1 border-neutral-300 bg-neutral-300 bg-opacity-75 px-6 py-4 text-black">
+          <li className="border-1 border-neutral-300 bg-neutral-300 bg-opacity-75 px-6 py-4 text-black hover:opacity-60">
             CONTACT
           </li>
         </a>

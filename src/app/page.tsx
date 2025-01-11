@@ -230,10 +230,12 @@ export default function Home(): JSX.Element {
                 In the CS444 Deep Learning for Computer Vision class, we learned
                 all about about computer vision history, theory, and
                 application, from classical gradient descent methods to present
-                day innovations like transformers.{"\n\n"}We also learned about
-                Deep Reinforcement Learning and applied the Double DQN algorithm
-                to create an AI that can play the classic arcade game Atari
-                Breakout! Results are shown in the video to the right.
+                day innovations like transformers.
+                <br /> <br />
+                We also learned about Deep Reinforcement Learning and applied
+                the Double DQN algorithm to create an AI that can play the
+                classic arcade game Atari Breakout! Results are shown in the
+                video to the right.
               </p>
             </ResumeSectionText>
           </div>
