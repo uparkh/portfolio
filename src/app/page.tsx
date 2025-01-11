@@ -189,7 +189,7 @@ export default function Home(): JSX.Element {
               It was a final project for CS467 (Social Visualization) and I
               developed much of the frontend design.
               <br /> <br />
-              Check out the project{" "}
+              Check out the project
               <ResumeExternalLink
                 href="https://musaic-psi.vercel.app/visualization"
                 after="🔗"
@@ -253,13 +253,13 @@ export default function Home(): JSX.Element {
             it’s about any of my background listed above, professional
             inquiries, or just to say hi!
             <br /> <br />
-            Check out my{" "}
+            Check out my
             <ResumeExternalLink
               href="/files/Upanshu_Parekh_Resume.pdf"
               after="📝"
             >
               Resume
-            </ResumeExternalLink>{" "}
+            </ResumeExternalLink>
             if you would like to as well.
           </p>
         </ResumeSectionText>
@@ -281,7 +281,10 @@ export default function Home(): JSX.Element {
         </a>
       </div>
       <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
-        <a href="#top" className="flex flex-col items-center gap-1">
+        <a
+          href="#top"
+          className="flex flex-col items-center gap-1 hover:opacity-80"
+        >
           <Image
             src={doubleUpArrow}
             alt=""
@@ -311,8 +314,14 @@ export default function Home(): JSX.Element {
           </ResumeExternalLink>
         </div>
         <p className="text-center font-raleway text-sm font-medium">
-          Design inspired by Tomasz Gajda. <br /> Customized and developed by
-          Upanshu Parekh.
+          Design inspired by Tomasz Gajda. <br /> Customized and
+          <ResumeExternalLink
+            href="https://github.com/blc5-33/portfolio"
+            after="🔗"
+          >
+            developed
+          </ResumeExternalLink>
+          by Upanshu Parekh.
         </p>
       </div>
     </>

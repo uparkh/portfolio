@@ -6,6 +6,7 @@ import barsSolid from "/public/font-awesome/bars-solid.svg";
 import arrowFromBox from "/public/font-awesome/arrow-up-right-from-square-solid.svg";
 import closeXSolid from "/public/font-awesome/x-solid.svg";
 import { JSX, useState } from "react";
+import Link from "next/link";
 
 export default function Navbar(): JSX.Element {
   enum MenuState {
@@ -97,7 +98,7 @@ export default function Navbar(): JSX.Element {
             PORTFOLIO
           </li>
         </a>
-        <a
+        <Link
           href="/files/Upanshu_Parekh_Resume.pdf"
           target="_blank"
           rel="noreferrer noopener"
@@ -112,7 +113,7 @@ export default function Navbar(): JSX.Element {
               priority
             />
           </li>
-        </a>
+        </Link>
         <a href="#contact-me">
           <li className="border-1 border-neutral-300 bg-neutral-300 bg-opacity-75 px-6 py-4 text-black hover:opacity-60">
             CONTACT
