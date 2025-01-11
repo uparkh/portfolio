@@ -19,6 +19,7 @@ import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 import doubleUpArrow from "/public/double-up-arrow.svg";
 
 import { JSX } from "react";
+import ResponsiveImage from "./_components/responsive-next-image";
 
 export default function Home(): JSX.Element {
   return (
@@ -77,96 +78,100 @@ export default function Home(): JSX.Element {
         className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white"
       >
         <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
-        <Image
-          src={uiucCsLogo}
-          alt="UIUC CS Logo"
-          className="w-3/5 max-w-48 rounded-2xl"
-          sizes="12rem"
-        />
-        <ResumeSectionText>
-          <p>
-            Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
-            the University of Illinois at Urbana-Champaign (UIUC) studying
-            Computer Science, and am currently evaluating pursuing an MCS from
-            UIUC (dependent on any full-time opportunities). I actively work
-            with:
-          </p>
-          <ul className="my-2 list-inside list-disc">
-            <li>
-              Python (Pytorch, Numpy, and other Data Processing libraries)
-            </li>
-            <li>Game Development Engines (Unreal Engine 5)</li>
-            <li>HTML / JavaScript / TypeScript (React.js, Next.js, D3.js)</li>
-            <li>CSS / Tailwind / LESS </li>
-            <li>Unix / Linux Machines</li>
-            <li>C / C++</li>
-          </ul>
-          <p>I have experience with:</p>
-          <ul className="my-2 list-inside list-disc">
-            <li>
-              Containerization and Virtualization (Docker, QEMU, Virtual
-              Machines)
-            </li>
-            <li>SQL / Databases</li>
-            <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
-            <li>Java</li>
-          </ul>
-          <p>
-            My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
-            videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
-            conversation if we have any shared interests!
-          </p>
-        </ResumeSectionText>
+        <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
+          <ResponsiveImage
+            src={uiucCsLogo}
+            alt="UIUC CS Logo"
+            className="rounded-2xl"
+            sizeVariant="md"
+          />
+          <ResumeSectionText>
+            <p>
+              Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
+              the University of Illinois at Urbana-Champaign (UIUC) studying
+              Computer Science, and am currently evaluating pursuing an MCS from
+              UIUC (dependent on any full-time opportunities). I actively work
+              with:
+            </p>
+            <ul className="my-2 list-inside list-disc">
+              <li>
+                Python (Pytorch, Numpy, and other Data Processing libraries)
+              </li>
+              <li>Game Development Engines (Unreal Engine 5)</li>
+              <li>HTML / JavaScript / TypeScript (React.js, Next.js, D3.js)</li>
+              <li>CSS / Tailwind / LESS </li>
+              <li>Unix / Linux Machines</li>
+              <li>C / C++</li>
+            </ul>
+            <p>I have experience with:</p>
+            <ul className="my-2 list-inside list-disc">
+              <li>
+                Containerization and Virtualization (Docker, QEMU, Virtual
+                Machines)
+              </li>
+              <li>SQL / Databases</li>
+              <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
+              <li>Java</li>
+            </ul>
+            <p>
+              My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
+              videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
+              conversation if we have any shared interests!
+            </p>
+          </ResumeSectionText>
+        </div>
       </div>
       <div id="experience" className="bg-main-ivory p-14 text-black">
         <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
-          <Image
-            src={codehsLogo}
-            alt="CodeHS Logo"
-            className="w-3/5 max-w-44"
-            sizes="11rem"
-          />
-          <div>
-            <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
-            <ResumeSectionText>
-              <p>
-                Over the summer of 2024 I worked as a Software Engineer Intern
-                at CodeHS, a company that develops educational Computer Science
-                material for millions of students.
-                <br /> <br />I worked on prototyping a search engine that
-                performs fast similarity search on a word embedding database
-                using Facebook AI Similarity Search, as well as a realtime quiz
-                leaderboard prototype for Questions of the Day (similar to
-                Kahoot!) using Google Firebase.
-              </p>
-            </ResumeSectionText>
+          <div className="flex flex-col items-center gap-5 md:flex-row">
+            <ResponsiveImage
+              src={codehsLogo}
+              alt="CodeHS Logo"
+              sizeVariant="md"
+            />
+            <div>
+              <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
+              <ResumeSectionText>
+                <p>
+                  Over the summer of 2024 I worked as a Software Engineer Intern
+                  at CodeHS, a company that develops educational Computer
+                  Science material for millions of students.
+                  <br /> <br />I worked on prototyping a search engine that
+                  performs fast similarity search on a word embedding database
+                  using Facebook AI Similarity Search, as well as a realtime
+                  quiz leaderboard prototype for Questions of the Day (similar
+                  to Kahoot!) using Google Firebase.
+                </p>
+              </ResumeSectionText>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center gap-5 pt-10">
           <ResumeSectionH1 className="border-black">
             EXTRA&shy;CURRICULARS
           </ResumeSectionH1>
-          <Image
-            src={motecIem}
-            alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
-            className="w-full max-w-72"
-            sizes="18rem"
-          />
-          <div>
-            <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
-            <ResumeSectionText>
-              <p>
-                Illini Electric Motorsports is about developing a racecar from
-                scratch every year to compete internationally against other
-                universities’ formula-spec cars.
-                <br /> <br />I was a member of the Data Acquisition and
-                Quantitative Analysis team from January to April 2024, and saved
-                the team more than $700 by developing an in-house Python file
-                format converter for the MoTeC i2 telemetry software by
-                augmenting snippets of an existing open-source library.
-              </p>
-            </ResumeSectionText>
+          <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
+            <ResponsiveImage
+              src={motecIem}
+              alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
+              sizeVariant="lg"
+            />
+            <div>
+              <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
+              <ResumeSectionText>
+                <p>
+                  Illini Electric Motorsports is about developing a racecar from
+                  scratch every year to compete internationally against other
+                  universities’ formula-spec cars.
+                  <br /> <br />I was a member of the Data Acquisition and
+                  Quantitative Analysis team from January to April 2024, and
+                  saved the team more than $700 by developing an in-house Python
+                  file format converter for the MoTeC i2 telemetry software by
+                  augmenting snippets of an existing open-source library.
+                </p>
+              </ResumeSectionText>
+            </div>
           </div>
         </div>
       </div>
@@ -203,7 +208,7 @@ export default function Home(): JSX.Element {
               Check out the project
               <ResumeExternalLink
                 href="https://musaic-psi.vercel.app/visualization"
-                after={<p className="inline brightness-200">🎵</p>}
+                after={<span className="inline brightness-200">🎵</span>}
               >
                 here
               </ResumeExternalLink>

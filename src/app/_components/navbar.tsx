@@ -43,7 +43,6 @@ export default function Navbar(): JSX.Element {
           alt="Upanshu Parekh's Logo"
           sizes="2.25rem"
           className="max-h-9 w-[9vw]"
-          priority
         />
         <button
           className="rounded-m flex items-center gap-3 hover:opacity-75"
@@ -57,7 +56,6 @@ export default function Navbar(): JSX.Element {
             alt={menuState === MenuState.OPEN ? "Close Menu" : "Open Menu"}
             sizes="2.25rem"
             className="max-h-9 w-[9vw] invert"
-            priority
           />
         </button>
       </div>
@@ -103,14 +101,13 @@ export default function Navbar(): JSX.Element {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <li className="border-1 flex items-center justify-center gap-3 border-neutral-300 bg-neutral-700 bg-opacity-75 px-6 py-4 text-white hover:opacity-60">
+          <li className="flex items-center justify-center gap-3 border-1 border-neutral-300 bg-neutral-700 bg-opacity-75 px-6 py-4 text-white hover:opacity-60">
             RESUME
             <Image
               src={arrowFromBox}
               alt="Arrow from Box"
               sizes="1.25rem"
               className="w-5 invert"
-              priority
             />
           </li>
         </Link>
