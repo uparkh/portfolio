@@ -37,7 +37,9 @@ export default function Home(): JSX.Element {
           <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
             <p className="text-xl">Hi, I am</p>
             <h1 className="text-4xl">Upanshu Parekh</h1>
-            <h4 className="text-lg">Aspiring Software Engineer</h4>
+            <h4 className="text-lg">
+              Aspiring Software Engineer / Data Scientist
+            </h4>
           </div>
           <div className="flex flex-col items-center justify-around">
             <a
@@ -85,23 +87,29 @@ export default function Home(): JSX.Element {
           <p>
             Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
             the University of Illinois at Urbana-Champaign (UIUC) studying
-            Computer Science. I am currently working on web-based projects and
-            plan on diving into some low level project soon. I have experience
+            Computer Science, and am currently evaluating pursuing an MCS from
+            UIUC (dependent on any full-time opportunities). I actively work
             with:
           </p>
           <ul className="my-2 list-inside list-disc">
-            <li>Python (Pytorch, Numpy, etc)</li>
-            <li>Containerization and Virtualization</li>
-            <li>HTML / CSS / JavaScript (React.js, D3.js)</li>
-            <li>Unix / Linux / C</li>
-            <li>Java</li>
+            <li>
+              Python (Pytorch, Numpy, and other Data Processing libraries)
+            </li>
+            <li>Game Development Engines (Unreal Engine 5)</li>
+            <li>HTML / JavaScript / TypeScript (React.js, Next.js, D3.js)</li>
+            <li>CSS / Tailwind / LESS </li>
+            <li>Unix / Linux Machines</li>
+            <li>C / C++</li>
           </ul>
-          <p>I have dabbled in but want to get stronger at:</p>
+          <p>I have experience with:</p>
           <ul className="my-2 list-inside list-disc">
-            <li>C++</li>
+            <li>
+              Containerization and Virtualization (Docker, QEMU, Virtual
+              Machines)
+            </li>
             <li>SQL / Databases</li>
             <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
-            <li>Game Development</li>
+            <li>Java</li>
           </ul>
           <p>
             My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
@@ -125,11 +133,12 @@ export default function Home(): JSX.Element {
               <p>
                 Over the summer of 2024 I worked as a Software Engineer Intern
                 at CodeHS, a company that develops educational Computer Science
-                material for millions of students. {"\n\n"} I worked on
-                prototyping a search engine that performs fast similarity search
-                on a word embedding database, as well as a realtime quiz
+                material for millions of students.
+                <br /> <br />I worked on prototyping a search engine that
+                performs fast similarity search on a word embedding database
+                using Facebook AI Similarity Search, as well as a realtime quiz
                 leaderboard prototype for Questions of the Day (similar to
-                Kahoot!).
+                Kahoot!) using Google Firebase.
               </p>
             </ResumeSectionText>
           </div>
@@ -150,11 +159,12 @@ export default function Home(): JSX.Element {
               <p>
                 Illini Electric Motorsports is about developing a racecar from
                 scratch every year to compete internationally against other
-                universities’ formula-spec cars. {"\n\n"} I was a member of the
-                Data Acquisition and Quantitative Analysis team from January to
-                April 2024, and saved the team more than $700 by developing an
-                in-house Python file format converter for the MoTeC i2 telemetry
-                software (branching from existing open-source tools).
+                universities’ formula-spec cars.
+                <br /> <br />I was a member of the Data Acquisition and
+                Quantitative Analysis team from January to April 2024, and saved
+                the team more than $700 by developing an in-house Python file
+                format converter for the MoTeC i2 telemetry software by
+                augmenting snippets of an existing open-source library.
               </p>
             </ResumeSectionText>
           </div>
@@ -187,15 +197,24 @@ export default function Home(): JSX.Element {
               throughout the years.
               <br /> <br />
               It was a final project for CS467 (Social Visualization) and I
-              developed much of the frontend design.
+              developed much of the frontend design using the D3.js
+              visualization library (and React.js for interactivity).
               <br /> <br />
               Check out the project
               <ResumeExternalLink
                 href="https://musaic-psi.vercel.app/visualization"
-                after="🔗"
+                after={<p className="inline brightness-200">🎵</p>}
               >
                 here
               </ResumeExternalLink>
+              and the
+              <ResumeExternalLink
+                href="https://github.com/jamieRollison/musaic"
+                after="🔗"
+              >
+                GitHub code
+              </ResumeExternalLink>
+              for it
             </p>
           </ResumeSectionText>
         </div>
@@ -229,8 +248,9 @@ export default function Home(): JSX.Element {
                 <br /> <br />
                 We also learned about Deep Reinforcement Learning and applied
                 the Double DQN algorithm to create an AI that can play the
-                classic arcade game Atari Breakout! Results are shown in the
-                video to the right.
+                classic arcade game Atari Breakout! We used Google Colab to be
+                able to train the model on higher end GPUs for efficiency.
+                Results are shown in the video.
               </p>
             </ResumeSectionText>
           </div>
