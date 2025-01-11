@@ -25,14 +25,9 @@ export default function Home(): JSX.Element {
     <>
       <div className="relative z-0 h-[80vh] max-h-[37.5rem] min-h-[35rem] grow overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem]">
         <div className="absolute left-0 right-0 -z-10 mx-auto max-w-[25rem] origin-top -scale-x-100 pt-4">
-          <Image
-            src={portrait}
-            alt="Upanshu's portrait"
-            priority
-            sizes="25rem"
-          />
+          <Image src={portrait} alt="Upanshu's portrait" sizes="25rem" />
         </div>
-        <div className="absolute inset-x-0 bottom-0 z-10 grid h-min min-h-60 grid-cols-6 justify-end gap-3 p-4">
+        <div className="absolute inset-x-0 bottom-0 z-10 grid h-2/5 grid-cols-6 justify-end gap-3 p-4">
           <Image
             src={customHeader}
             alt=""
@@ -54,7 +49,6 @@ export default function Home(): JSX.Element {
                 alt="At sign to Upanshu's email"
                 className="w-5vw min-w-8"
                 sizes="5vw"
-                priority
               />
             </a>
             <ResumeExternalLink href="https://www.github.com/blc5-33">
@@ -63,7 +57,6 @@ export default function Home(): JSX.Element {
                 alt="Github logo to Upanshu's Github account"
                 className="w-5vw min-w-8"
                 sizes="5vw"
-                priority
               />
             </ResumeExternalLink>
             <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
@@ -72,7 +65,6 @@ export default function Home(): JSX.Element {
                 alt="Linkedin logo to Upanshu's Linkedin account"
                 className="w-5vw min-w-8"
                 sizes="5vw"
-                priority
               />
             </ResumeExternalLink>
           </div>
