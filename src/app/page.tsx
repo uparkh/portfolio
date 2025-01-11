@@ -293,12 +293,12 @@ export default function Home(): JSX.Element {
               className="flex items-center gap-2 hover:opacity-80"
               href="mailto:parekhupanshu@gmail.com"
             >
-              <div className="bg-neutral-400 p-1 shadow-md shadow-neutral-500">
-                <Image
+              <div className="bg-main-silver p-1.5 shadow-md shadow-black">
+                <ResponsiveImage
                   src={atSign}
                   alt="At sign to Upanshu's email"
-                  className="w-[3vw] min-w-5 invert"
-                  sizes="3vw"
+                  className="invert"
+                  sizeVariant="xs"
                 />
               </div>
               <p className="text-md font-raleway font-medium underline underline-offset-2">
@@ -311,33 +311,26 @@ export default function Home(): JSX.Element {
       <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
         <a
           href="#top"
-          className="flex flex-col items-center gap-1 hover:opacity-80"
+          className="flex flex-col items-center gap-1 border-b-1 border-neutral-500 pb-4 hover:opacity-80"
         >
-          <Image
-            src={doubleUpArrow}
-            alt=""
-            className="w-5vw min-w-6"
-            sizes="5vw"
-          />
+          <ResponsiveImage src={doubleUpArrow} alt="" sizeVariant="xs" />
           <p className="text-md font-montserrat font-bold capitalize tracking-widest">
             BACK TO TOP
           </p>
         </a>
         <div className="flex items-center justify-evenly gap-8">
           <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
-            <Image
+            <ResponsiveImage
               src={linkedinLogo}
               alt="Linkedin logo to Upanshu's Linkedin account"
-              className="w-5vw min-w-8"
-              sizes="5vw"
+              sizeVariant="sm"
             />
           </ResumeExternalLink>
           <ResumeExternalLink href="https://www.github.com/blc5-33">
-            <Image
+            <ResponsiveImage
               src={githubLogo}
               alt="Github logo to Upanshu's Github account"
-              className="w-5vw min-w-8"
-              sizes="5vw"
+              sizeVariant="sm"
             />
           </ResumeExternalLink>
         </div>

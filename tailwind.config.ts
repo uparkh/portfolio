@@ -16,6 +16,7 @@ export default {
       colors: {
         "main-slate": "#1D1D1D",
         "main-ivory": "#D7D7D7",
+        "main-silver": "#C4C4C4",
       },
       letterSpacing: {
         canyon: "0.3em",
@@ -31,6 +32,10 @@ export default {
         "1/10": "10%",
         "1/15": "6.666666666666667%",
         "1/20": "5%",
+        "1vw": "1vw",
+        "2vw": "2vw",
+        "3vw": "3vw",
+        "4vw": "4vw",
         "5vw": "5vw",
         "10vw": "10vw",
         "13vw": "13vw",

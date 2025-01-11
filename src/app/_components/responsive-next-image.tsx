@@ -10,16 +10,22 @@ export default function ResponsiveImage({
 }: Readonly<{
   src: string | StaticImageData;
   alt: string;
-  sizeVariant: "sm" | "md" | "lg";
+  sizeVariant: "xs" | "sm" | "md" | "lg";
   className?: string;
   priority?: boolean;
 }>): JSX.Element {
   let sizes: string;
   let baseClasses: string;
   switch (sizeVariant) {
+    case "xs":
+      baseClasses = "max-w-6 md:max-w-none w-20vw md:w-3vw lg:w-2vw xl:w-2vw";
+      sizes =
+        "20vw, (min-width: 768px) 3vw, (min-width: 1024px) 2vw, (min-width: 1280px) 2vw";
+      break;
     case "sm":
-      baseClasses = "w-[1.5rem]";
-      sizes = "1.5rem";
+      baseClasses = "max-w-10 md:max-w-none w-10vw md:w-5vw lg:w-4vw xl:w-3vw";
+      sizes =
+        "10vw, (min-width: 768px) 5vw, (min-width: 1024px) 4vw, (min-width: 1280px) 3vw";
       break;
     case "md":
       baseClasses =
