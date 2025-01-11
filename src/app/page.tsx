@@ -334,14 +334,14 @@ export default function Home(): JSX.Element {
           </ResumeExternalLink>
         </div>
         <p className="text-center font-raleway text-sm font-medium">
-          Design inspired by Tomasz Gajda. <br /> Customized and
+          Design inspired by
           <ResumeExternalLink
-            href="https://github.com/blc5-33/portfolio"
-            after="🔗"
+            href="https://www.figma.com/community/file/897605510384968096"
+            after="✏️"
           >
-            developed
+            Tomasz Gajda
           </ResumeExternalLink>
-          by Upanshu Parekh.
+          <br /> Customized and developed by Upanshu Parekh.
         </p>
       </div>
     </>

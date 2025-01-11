@@ -1,6 +1,6 @@
 # Upanshu's Portfolio
 
-Hi there! Thanks for being interested in my profile and reading through my portfolio. The tech stack I used to make it was: Next.js, Node.js, Tailwind CSS, React.js, and TypeScript.
+The tech stack I used to make it was: Next.js, Node.js, Tailwind CSS, React.js, and TypeScript.
 
 I learned and used as many best practices for each of these technologies as I could, aiming to sharpen my front-end skillset. I'm sure you will agree if you take a look at my code.
 
