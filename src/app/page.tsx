@@ -280,7 +280,7 @@ export default function Home(): JSX.Element {
         </a>
       </div>
       <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
-        <div className="flex flex-col items-center gap-1">
+        <a href="#top" className="flex flex-col items-center gap-1">
           <Image
             src={doubleUpArrow}
             alt=""
@@ -290,7 +290,7 @@ export default function Home(): JSX.Element {
           <p className="text-md font-montserrat font-bold capitalize tracking-widest">
             BACK TO TOP
           </p>
-        </div>
+        </a>
         <div className="flex items-center justify-evenly gap-8">
           <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
             <Image

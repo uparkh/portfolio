@@ -5,7 +5,7 @@ import upanshuParekhLogo from "/public/upanshu-parekh-logo.svg";
 import barsSolid from "/public/font-awesome/bars-solid.svg";
 import arrowFromBox from "/public/font-awesome/arrow-up-right-from-square-solid.svg";
 import closeXSolid from "/public/font-awesome/x-solid.svg";
-import { JSX, useEffect, useState } from "react";
+import { JSX, useState } from "react";
 
 export default function Navbar(): JSX.Element {
   enum MenuState {
