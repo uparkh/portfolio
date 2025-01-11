@@ -78,7 +78,10 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white">
+      <div
+        id="about-me"
+        className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white"
+      >
         <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
         <Image
           src={uiucCsLogo}
@@ -115,7 +118,7 @@ export default function Home(): JSX.Element {
           </p>
         </ResumeSectionText>
       </div>
-      <div className="bg-main-ivory p-14 text-black">
+      <div id="experience" className="bg-main-ivory p-14 text-black">
         <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
           <Image
@@ -165,7 +168,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="relative p-12">
+      <div id="portfolio" className="relative p-12">
         <Image
           src={cyberscape}
           alt=""
@@ -241,7 +244,10 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black">
+      <div
+        id="contact-me"
+        className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black"
+      >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
         <Image
           src={altProfessionalPic}

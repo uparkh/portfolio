@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <StrictMode>
         <body
           className={`${raleway.variable} ${montserrat.variable} ${open_sans.variable} ${overpass.variable} antialiased`}

@@ -71,6 +71,7 @@ export default function Navbar(): JSX.Element {
         } absolute -z-10 h-screen w-screen bg-black bg-opacity-60`}
       ></div>
       <ul
+        onClick={handleToggleMenu}
         onAnimationStart={() => setIsAnimating(true)}
         onAnimationEnd={() => setIsAnimating(false)}
         className={`${
@@ -108,7 +109,7 @@ export default function Navbar(): JSX.Element {
             />
           </li>
         </a>
-        <a href="#contact">
+        <a href="#contact-me">
           <li className="border-1 border-neutral-300 bg-neutral-300 bg-opacity-75 px-6 py-4 text-black hover:opacity-60">
             CONTACT
           </li>

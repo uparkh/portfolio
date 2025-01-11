@@ -34,6 +34,7 @@ nav .fade-out {
   }
 
   100% {
+    display: none;
     transform: translateY(-100%);
   }
 }
