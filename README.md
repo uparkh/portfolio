@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Upanshu's Portfolio
 
-## Getting Started
+Hi there! Thanks for being interested in my profile and reading through my portfolio. The tech stack I used to make it was: Next.js, Node.js, Tailwind CSS, React.js, and TypeScript.
 
-First, run the development server:
+I learned and used as many best practices for each of these technologies as I could, aiming to sharpen my front-end skillset. I'm sure you will agree if you take a look at my code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> But it's just a portfolio website!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sure, but I started with just a blank project and learned so much useful information from reading each tech's documentation to get this to turn out exactly how I wanted it. I'm very confident I have a strong foundation to build much more complex apps now.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design Inspiration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I used Figma to prototype the design, based on [Tomasz Gajda's original design](https://www.figma.com/community/file/897605510384968096). I heavily modified it in my own Figma design, and developed it from the ground up after the initial draft.
