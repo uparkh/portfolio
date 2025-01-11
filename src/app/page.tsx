@@ -262,7 +262,10 @@ export default function Home(): JSX.Element {
             inquiries, or just to say hi!
             <br /> <br />
             Check out my{" "}
-            <ResumeExternalLink href="#" after="📝">
+            <ResumeExternalLink
+              href="/files/Upanshu_Parekh_Resume.pdf"
+              after="📝"
+            >
               Resume
             </ResumeExternalLink>{" "}
             if you would like to as well.

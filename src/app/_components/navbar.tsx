@@ -97,7 +97,11 @@ export default function Navbar(): JSX.Element {
             PORTFOLIO
           </li>
         </a>
-        <a href="#">
+        <a
+          href="/files/Upanshu_Parekh_Resume.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <li className="border-1 flex items-center justify-center gap-3 border-neutral-300 bg-neutral-700 bg-opacity-75 px-6 py-4 text-white hover:opacity-60">
             RESUME
             <Image
