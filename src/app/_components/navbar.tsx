@@ -15,8 +15,10 @@ export default function Navbar(): JSX.Element {
   }
 
   const [menuState, setMenuState] = useState<MenuState>(MenuState.LOADED);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   function handleToggleMenu(): void {
+    if (isAnimating) return;
     setMenuState(
       menuState === MenuState.OPEN ? MenuState.CLOSED : MenuState.OPEN,
     );
@@ -61,6 +63,8 @@ export default function Navbar(): JSX.Element {
         } absolute -z-10 h-screen w-screen bg-black bg-opacity-60`}
       ></div>
       <ul
+        onAnimationStart={() => setIsAnimating(true)}
+        onAnimationEnd={() => setIsAnimating(false)}
         className={`${
           menuState === MenuState.LOADED
             ? "hidden"
