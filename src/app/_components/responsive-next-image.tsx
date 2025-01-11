@@ -23,15 +23,13 @@ export default function ResponsiveImage({
       break;
     case "md":
       baseClasses =
-        "max-w-48 md:max-w-none w-45vw md:w-20vw lg:w-15vw xl:w-10vw";
+        "max-w-44 md:max-w-none w-45vw md:w-20vw lg:w-15vw xl:w-13vw";
       sizes =
-        "45vw, (min-width: 768px) 20vw, (min-width: 1024px) 15vw, (min-width: 1280px) 10vw";
+        "45vw, (min-width: 768px) 20vw, (min-width: 1024px) 15vw, (min-width: 1280px) 13vw";
       break;
     case "lg":
-      baseClasses =
-        "max-w-72 md:max-w-none w-70vw md:w-35vw lg:w-30vw xl:w-25vw";
-      sizes =
-        "70vw, (min-width: 768px) 35vw, (min-width: 1024px) 30vw, (min-width: 1280px) 25vw";
+      baseClasses = "max-w-72 md:max-w-none w-70vw md:w-30vw lg:w-25vw";
+      sizes = "70vw, (min-width: 768px) 30vw, (min-width: 1024px) 25vw";
       break;
   }
 

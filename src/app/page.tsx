@@ -124,7 +124,7 @@ export default function Home(): JSX.Element {
       <div id="experience" className="bg-main-ivory p-14 text-black">
         <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
-          <div className="flex flex-col items-center gap-5 md:flex-row">
+          <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
             <ResponsiveImage
               src={codehsLogo}
               alt="CodeHS Logo"
@@ -187,12 +187,11 @@ export default function Home(): JSX.Element {
         </ResumeSectionH1>
       </div>
       <div className="flex flex-col items-center gap-10 bg-main-slate p-14 text-white">
-        <div className="flex flex-col items-center gap-5">
-          <Image
+        <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
+          <ResponsiveImage
             src={musaicLogo}
             alt="Musaic Logo"
-            className="w-full max-w-64 shadow-white"
-            sizes="16rem"
+            sizeVariant="lg"
           />
           <ResumeSectionText>
             <p>
@@ -229,7 +228,7 @@ export default function Home(): JSX.Element {
           className="w-5/6 max-w-52 antialiased"
           sizes="13rem"
         />
-        <div className="flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center gap-5 md:flex-row-reverse md:gap-10">
           <video
             src="/breakout_ddqn_video.mp4"
             autoPlay
@@ -238,7 +237,7 @@ export default function Home(): JSX.Element {
             controls
             playsInline
             muted
-            className="w-[160px] rounded-xl"
+            className="w-45vw md:w-60vw lg:w-50vw xl:w-40vw max-w-48 rounded-xl md:max-w-none"
           />
           <div>
             <ResumeExperienceH2 className="border-white">
@@ -266,44 +265,48 @@ export default function Home(): JSX.Element {
         className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black"
       >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
-        <Image
-          src={altProfessionalPic}
-          alt="Upanshu's professional picture"
-          className="w-4/5 max-w-48 rounded-full"
-          sizes="12rem"
-        />
-        <ResumeSectionText>
-          <p>
-            Feel free to contact me at my email below for any reason, whether
-            it’s about any of my background listed above, professional
-            inquiries, or just to say hi!
-            <br /> <br />
-            Check out my
-            <ResumeExternalLink
-              href="/files/Upanshu_Parekh_Resume.pdf"
-              after="📝"
+        <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
+          <ResponsiveImage
+            src={altProfessionalPic}
+            alt="Upanshu's professional picture"
+            className="rounded-full"
+            sizeVariant="md"
+          />
+          <div className="flex flex-col items-center gap-4">
+            <ResumeSectionText>
+              <p>
+                Feel free to contact me at my email below for any reason,
+                whether it’s about any of my background listed above,
+                professional inquiries, or just to say hi!
+                <br /> <br />
+                Check out my
+                <ResumeExternalLink
+                  href="/files/Upanshu_Parekh_Resume.pdf"
+                  after="📝"
+                >
+                  Resume
+                </ResumeExternalLink>
+                if you would like to as well.
+              </p>
+            </ResumeSectionText>
+            <a
+              className="flex items-center gap-2 hover:opacity-80"
+              href="mailto:parekhupanshu@gmail.com"
             >
-              Resume
-            </ResumeExternalLink>
-            if you would like to as well.
-          </p>
-        </ResumeSectionText>
-        <a
-          className="flex items-center gap-2 hover:opacity-80"
-          href="mailto:parekhupanshu@gmail.com"
-        >
-          <div className="bg-neutral-400 p-1 shadow-md shadow-neutral-500">
-            <Image
-              src={atSign}
-              alt="At sign to Upanshu's email"
-              className="w-[3vw] min-w-5 invert"
-              sizes="3vw"
-            />
+              <div className="bg-neutral-400 p-1 shadow-md shadow-neutral-500">
+                <Image
+                  src={atSign}
+                  alt="At sign to Upanshu's email"
+                  className="w-[3vw] min-w-5 invert"
+                  sizes="3vw"
+                />
+              </div>
+              <p className="text-md font-raleway font-medium underline underline-offset-2">
+                parekhupanshu@gmail.com
+              </p>
+            </a>
           </div>
-          <p className="text-md font-raleway font-medium underline underline-offset-2">
-            parekhupanshu@gmail.com
-          </p>
-        </a>
+        </div>
       </div>
       <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
         <a
