@@ -5,7 +5,7 @@ import upanshuParekhLogo from "/public/upanshu-parekh-logo.svg";
 import barsSolid from "/public/font-awesome/bars-solid.svg";
 import arrowFromBox from "/public/font-awesome/arrow-up-right-from-square-solid.svg";
 import closeXSolid from "/public/font-awesome/x-solid.svg";
-import { JSX, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 
 export default function Navbar(): JSX.Element {
   enum MenuState {
@@ -19,6 +19,14 @@ export default function Navbar(): JSX.Element {
 
   function handleToggleMenu(): void {
     if (isAnimating) return;
+
+    if (menuState !== MenuState.OPEN) {
+      scrollTo(0, 0);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+
     setMenuState(
       menuState === MenuState.OPEN ? MenuState.CLOSED : MenuState.OPEN,
     );
