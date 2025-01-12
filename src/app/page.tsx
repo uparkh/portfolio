@@ -14,7 +14,7 @@ import motecIem from "/public/motec-iem.png";
 import cyberscape from "/public/cyberscape.png";
 import musaicLogo from "/public/musaic-logo.svg";
 import fancySeparator from "/public/fancy-separator.png";
-import desktopHeader from "/public/desktop-header.png";
+import desktopHeader from "/public/desktop-header.svg";
 import customHeader from "/public/custom-header.png";
 import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 import doubleUpArrow from "/public/double-up-arrow.svg";
@@ -31,9 +31,9 @@ export default function Home(): JSX.Element {
             src={desktopHeader}
             alt=""
             fill={true}
-            className="-z-10 object-fill opacity-70 brightness-[0]"
+            className="-z-10 object-cover opacity-70 brightness-[0]"
           />
-          <div className="absolute -right-4 bottom-0 mx-auto h-[90%] w-full">
+          <div className="absolute bottom-0 right-3 mx-auto h-[90%] w-5/6">
             <Image
               src={portrait}
               alt="Upanshu's portrait"
@@ -259,7 +259,7 @@ export default function Home(): JSX.Element {
             controls
             playsInline
             muted
-            className="w-45vw md:w-60vw lg:w-50vw xl:w-40vw max-w-48 rounded-xl md:max-w-none"
+            className="w-45vw max-w-48 rounded-xl md:w-60vw md:max-w-none lg:w-50vw xl:w-40vw"
           />
           <div>
             <ResumeExperienceH2 className="border-white">
