@@ -14,6 +14,7 @@ import motecIem from "/public/motec-iem.png";
 import cyberscape from "/public/cyberscape.png";
 import musaicLogo from "/public/musaic-logo.svg";
 import fancySeparator from "/public/fancy-separator.png";
+import desktopHeader from "/public/desktop-header.png";
 import customHeader from "/public/custom-header.png";
 import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 import doubleUpArrow from "/public/double-up-arrow.svg";
@@ -24,7 +25,25 @@ import ResponsiveImage from "./_components/responsive-next-image";
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="relative z-0 h-screen grow overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem]">
+      <div className="relative z-0 hidden h-screen overflow-hidden bg-main-ivory md:block">
+        <div className="absolute bottom-0 right-0 top-0 h-full w-2/3">
+          <Image
+            src={desktopHeader}
+            alt=""
+            fill={true}
+            className="-z-10 object-fill opacity-70 brightness-[0]"
+          />
+          <div className="absolute -right-4 bottom-0 mx-auto h-[90%] w-full">
+            <Image
+              src={portrait}
+              alt="Upanshu's portrait"
+              fill
+              className="translate-y-24 -scale-x-125 scale-y-125 object-contain object-center"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="relative z-0 h-screen overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
         <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
           <Image
             src={portrait}
@@ -38,7 +57,7 @@ export default function Home(): JSX.Element {
             src={customHeader}
             alt=""
             fill={true}
-            className="-z-10 antialiased opacity-70"
+            className="-z-10 opacity-70"
           />
           <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
             <p className="text-xl">Hi, I am</p>
