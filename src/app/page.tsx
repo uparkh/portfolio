@@ -42,6 +42,14 @@ export default function Home(): JSX.Element {
             />
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 top-0 z-20 flex h-full w-1/2 flex-col items-center justify-evenly bg-black bg-opacity-20 p-6">
+          <div className="font-raleway font-bold text-black">
+            <p className="text-xl">Hi, I am</p>
+            <br />
+            <h1 className="text-4xl">Upanshu Parekh</h1>
+            <h4 className="text-lg">Aspiring Software Engineer</h4>
+          </div>
+        </div>
       </div>
       <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
         <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
