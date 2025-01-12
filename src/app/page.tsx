@@ -25,7 +25,7 @@ import ResponsiveImage from "./_components/responsive-next-image";
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="relative z-0 hidden h-screen overflow-hidden bg-main-ivory md:block">
+      <div className="relative z-0 hidden h-dvh overflow-hidden bg-main-ivory md:block">
         <div className="absolute bottom-0 right-0 top-0 h-full w-2/3">
           <Image
             src={desktopHeader}
@@ -43,7 +43,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="relative z-0 h-screen overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
+      <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
         <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
           <Image
             src={portrait}
@@ -111,9 +111,7 @@ export default function Home(): JSX.Element {
             <p>
               Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
               the University of Illinois at Urbana-Champaign (UIUC) studying
-              Computer Science, and am currently evaluating pursuing an MCS from
-              UIUC (dependent on any full-time opportunities). I actively work
-              with:
+              Computer Science. I am most comfortable with:
             </p>
             <ul className="my-2 list-inside list-disc">
               <li>
@@ -158,7 +156,8 @@ export default function Home(): JSX.Element {
                 <p>
                   Over the summer of 2024 I worked as a Software Engineer Intern
                   at CodeHS, a company that develops educational Computer
-                  Science material for millions of students.
+                  Science material for millions of students. I primarily used
+                  Python, Django, LESS, SQL, and Docker.
                   <br /> <br />I worked on prototyping a search engine that
                   performs fast similarity search on a word embedding database
                   using Facebook AI Similarity Search, as well as a realtime
@@ -330,7 +329,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
+      <footer className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
         <a
           href="#top"
           className="flex flex-col items-center gap-1 border-b-1 border-neutral-500 pb-4 hover:opacity-80"
@@ -357,16 +356,10 @@ export default function Home(): JSX.Element {
           </ResumeExternalLink>
         </div>
         <p className="text-center font-raleway text-sm font-medium">
-          Design inspired by
-          <ResumeExternalLink
-            href="https://www.figma.com/community/file/897605510384968096"
-            after="✏️"
-          >
-            Tomasz Gajda
-          </ResumeExternalLink>
-          <br /> Customized and developed by Upanshu Parekh.
+          Design inspired by Tomasz Gajda.
+          <br /> Customized and developed with Next.js by Upanshu Parekh.
         </p>
-      </div>
+      </footer>
     </>
   );
 }
