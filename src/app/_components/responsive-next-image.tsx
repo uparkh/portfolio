@@ -18,9 +18,9 @@ export default function ResponsiveImage({
   let baseClasses: string;
   switch (sizeVariant) {
     case "xs":
-      baseClasses = "max-w-6 md:max-w-none w-20vw md:w-3vw lg:w-2vw xl:w-2vw";
+      baseClasses = "max-w-6 md:max-w-none w-20vw md:w-3vw lg:w-2.5vw xl:w-2vw";
       sizes =
-        "20vw, (min-width: 768px) 3vw, (min-width: 1024px) 2vw, (min-width: 1280px) 2vw";
+        "20vw, (min-width: 768px) 3vw, (min-width: 1024px) 2.5vw, (min-width: 1280px) 2vw";
       break;
     case "sm":
       baseClasses = "max-w-10 md:max-w-none w-10vw md:w-5vw lg:w-4vw xl:w-3vw";

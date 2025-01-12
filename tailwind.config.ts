@@ -34,6 +34,7 @@ export default {
         "1/20": "5%",
         "1vw": "1vw",
         "2vw": "2vw",
+        "2.5vw": "2.5vw",
         "3vw": "3vw",
         "4vw": "4vw",
         "5vw": "5vw",
@@ -59,6 +60,9 @@ export default {
       },
       borderWidth: {
         "1": "1px",
+      },
+      height: {
+        "9/10": "90%",
       },
     },
   },

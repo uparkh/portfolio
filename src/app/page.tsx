@@ -21,10 +21,12 @@ import doubleUpArrow from "/public/double-up-arrow.svg";
 
 import { JSX } from "react";
 import ResponsiveImage from "./_components/responsive-next-image";
+import SocialLink from "./_components/social-link";
 
 export default function Home(): JSX.Element {
   return (
     <>
+      {/* HIGHER DEVICE WIDTH HERO LAYOUT >=768px */}
       <div className="relative z-0 hidden h-dvh overflow-hidden bg-main-ivory md:block">
         <div className="absolute bottom-0 right-0 top-0 h-full w-2/3">
           <Image
@@ -33,22 +35,50 @@ export default function Home(): JSX.Element {
             fill={true}
             className="-z-10 object-cover opacity-70 brightness-[0]"
           />
-          <div className="absolute bottom-0 right-3 mx-auto h-[90%] w-5/6">
+          <div className="h-9/10 absolute bottom-0 right-3 mx-auto w-5/6">
             <Image
               src={portrait}
               alt="Upanshu's portrait"
-              fill
+              fill={true}
+              sizes="50vw"
               className="translate-y-24 -scale-x-125 scale-y-125 object-contain object-center"
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 top-0 z-20 flex h-full w-1/2 flex-col items-center justify-evenly bg-black bg-opacity-20 p-6">
-          <div className="font-raleway font-bold text-black">
-            <p className="text-xl">Hi, I am</p>
+        {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
+        <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
+          <div>
+            <p className="text-xl lg:text-2xl">Hi, I am</p>
             <br />
-            <h1 className="text-4xl">Upanshu Parekh</h1>
-            <h4 className="text-lg">Aspiring Software Engineer</h4>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl">Upanshu Parekh</h1>
+            <h4 className="text-lg lg:text-xl">Aspiring Software Engineer</h4>
           </div>
+          <ul className="flex flex-col gap-5">
+            <li>
+              <SocialLink
+                href="mailto:parekhupanshu@gmail.com"
+                src={atSign}
+                alt="At sign to Upanshu's email"
+                text="parekhupanshu@gmail.com"
+              />
+            </li>
+            <li>
+              <SocialLink
+                href="https://www.github.com/blc5-33"
+                src={githubLogo}
+                alt="Github logo to Upanshu's Github account"
+                text="github.com/blc5-33"
+              />
+            </li>
+            <li>
+              <SocialLink
+                href="https://www.linkedin.com/in/uparkh/"
+                src={linkedinLogo}
+                alt="Linkedin logo to Upanshu's Linkedin account"
+                text="linkedin.com/in/uparkh"
+              />
+            </li>
+          </ul>
         </div>
       </div>
       <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
@@ -318,22 +348,12 @@ export default function Home(): JSX.Element {
                 if you would like to as well.
               </p>
             </ResumeSectionText>
-            <a
-              className="flex items-center gap-2 hover:opacity-80"
+            <SocialLink
               href="mailto:parekhupanshu@gmail.com"
-            >
-              <div className="bg-main-silver p-1.5 shadow-md shadow-black">
-                <ResponsiveImage
-                  src={atSign}
-                  alt="At sign to Upanshu's email"
-                  className="invert"
-                  sizeVariant="xs"
-                />
-              </div>
-              <p className="text-md font-raleway font-medium underline underline-offset-2">
-                parekhupanshu@gmail.com
-              </p>
-            </a>
+              src={atSign}
+              alt="At sign to Upanshu's email"
+              text="parekhupanshu@gmail.com"
+            />
           </div>
         </div>
       </div>
