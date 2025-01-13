@@ -22,6 +22,7 @@ import doubleUpArrow from "/public/double-up-arrow.svg";
 import { JSX } from "react";
 import ResponsiveImage from "./_components/responsive-next-image";
 import SocialLink from "./_components/social-link";
+import Anchor from "./_components/anchor";
 
 export default function Home(): JSX.Element {
   return (
@@ -106,33 +107,30 @@ export default function Home(): JSX.Element {
               <h4 className="text-lg">Aspiring Software Engineer</h4>
             </header>
             <aside className="flex h-full flex-col items-center justify-around">
-              <a
-                href="mailto:parekhupanshu@gmail.com"
-                className="hover:opacity-80"
-              >
+              <Anchor href="mailto:parekhupanshu@gmail.com">
                 <Image
                   src={atSign}
                   alt="At sign to Upanshu's email"
                   className="w-5vw min-w-9"
                   sizes="5vw"
                 />
-              </a>
-              <a href="https://www.github.com/blc5-33">
+              </Anchor>
+              <Anchor href="https://www.github.com/blc5-33">
                 <Image
                   src={githubLogo}
                   alt="Github logo to Upanshu's Github account"
                   className="w-5vw min-w-9"
                   sizes="5vw"
                 />
-              </a>
-              <a href="https://www.linkedin.com/in/uparkh/">
+              </Anchor>
+              <Anchor href="https://www.linkedin.com/in/uparkh/">
                 <Image
                   src={linkedinLogo}
                   alt="Linkedin logo to Upanshu's Linkedin account"
                   className="w-5vw min-w-9"
                   sizes="5vw"
                 />
-              </a>
+              </Anchor>
             </aside>
           </div>
         </div>
@@ -380,20 +378,20 @@ export default function Home(): JSX.Element {
           </p>
         </a>
         <div className="flex items-center justify-evenly gap-8">
-          <a href="https://www.linkedin.com/in/uparkh/">
+          <Anchor href="https://www.linkedin.com/in/uparkh/">
             <ResponsiveImage
               src={linkedinLogo}
               alt="Linkedin logo to Upanshu's Linkedin account"
               sizeVariant="sm"
             />
-          </a>
-          <a href="https://www.github.com/blc5-33">
+          </Anchor>
+          <Anchor href="https://www.github.com/blc5-33">
             <ResponsiveImage
               src={githubLogo}
               alt="Github logo to Upanshu's Github account"
               sizeVariant="sm"
             />
-          </a>
+          </Anchor>
         </div>
         <p className="text-center font-raleway text-sm font-medium">
           Design inspired by Tomasz Gajda.
