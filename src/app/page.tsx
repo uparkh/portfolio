@@ -137,11 +137,11 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <article className="flex w-full flex-col items-center bg-main-slate p-14">
-        <section
-          id="about-me"
-          className="flex w-11/12 flex-col items-center gap-5 text-white"
-        >
+      <article
+        id="about-me"
+        className="flex w-full flex-col items-center bg-main-slate p-14"
+      >
+        <section className="flex w-11/12 flex-col items-center gap-5 text-white">
           <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
           <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
             <ResponsiveImage
@@ -187,10 +187,13 @@ export default function Home(): JSX.Element {
           </div>
         </section>
       </article>
-      <div id="experience" className="bg-main-ivory p-14 text-black 2xl:px-28">
-        <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
+      <article
+        id="experience"
+        className="flex w-full flex-col items-center bg-main-ivory p-14 text-black"
+      >
+        <section className="flex w-11/12 flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
-          <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
+          <div className="flex flex-col items-center gap-10 md:flex-row">
             <ResponsiveImage
               src={codehsLogo}
               alt="CodeHS Logo"
@@ -213,8 +216,8 @@ export default function Home(): JSX.Element {
               </ResumeSectionText>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-5 pt-10">
+        </section>
+        <section className="flex w-11/12 flex-col items-center gap-5 pt-10">
           <ResumeSectionH1 className="border-black">
             EXTRA&shy;CURRICULARS
           </ResumeSectionH1>
@@ -240,21 +243,24 @@ export default function Home(): JSX.Element {
               </ResumeSectionText>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="portfolio" className="relative p-12">
+        </section>
+      </article>
+      <header
+        id="portfolio"
+        className="relative flex flex-col items-center p-12"
+      >
         <Image
           src={cyberscape}
           alt=""
           fill={true}
           className="-z-10 object-cover object-center brightness-50"
         />
-        <ResumeSectionH1 className="mx-auto w-min border-white text-center text-white">
+        <ResumeSectionH1 className="border-white text-white">
           PORTFOLIO
         </ResumeSectionH1>
-      </div>
-      <div className="flex flex-col items-center gap-10 bg-main-slate p-14 text-white 2xl:px-28">
-        <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
+      </header>
+      <article className="flex w-full flex-col items-center gap-10 bg-main-slate p-14 text-white">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
           <ResponsiveImage
             src={musaicLogo}
             alt="Musaic Logo"
@@ -288,14 +294,14 @@ export default function Home(): JSX.Element {
               for it
             </p>
           </ResumeSectionText>
-        </div>
+        </section>
         <Image
           src={fancySeparator}
           alt=""
           className="w-5/6 max-w-52"
           sizes="13rem"
         />
-        <div className="flex flex-col items-center gap-5 md:flex-row-reverse md:gap-10">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
           <video
             src="/breakout_ddqn_video.mp4"
             autoPlay
@@ -304,7 +310,7 @@ export default function Home(): JSX.Element {
             controls
             playsInline
             muted
-            className="w-45vw max-w-48 rounded-xl md:w-60vw md:max-w-none lg:w-50vw xl:w-40vw"
+            className="w-70vw max-w-72 rounded-2xl md:w-30vw md:max-w-none lg:w-25vw xl:w-20vw"
           />
           <div>
             <ResumeExperienceH2 className="border-white">
@@ -325,46 +331,44 @@ export default function Home(): JSX.Element {
               </p>
             </ResumeSectionText>
           </div>
-        </div>
-      </div>
-      <div
+        </section>
+      </article>
+      <article
         id="contact-me"
-        className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black 2xl:px-28"
+        className="flex w-full flex-col items-center gap-5 bg-main-ivory p-14 text-black"
       >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
-        <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
           <ResponsiveImage
             src={altProfessionalPic}
             alt="Upanshu's professional picture"
             className="rounded-full"
             sizeVariant="md"
           />
-          <div className="flex flex-col items-center gap-4">
-            <ResumeSectionText>
-              <p>
-                Feel free to contact me at my
-                <ResumeExternalLink
-                  href="mailto:parekhupanshu@gmail.com"
-                  after="📧"
-                >
-                  Email
-                </ResumeExternalLink>
-                for any reason, whether it’s about any of my background listed
-                above, professional inquiries, or just to say hi!
-                <br /> <br />
-                Check out my
-                <ResumeExternalLink
-                  href="/files/Upanshu_Parekh_Resume.pdf"
-                  after="📝"
-                >
-                  Resume
-                </ResumeExternalLink>
-                if you would like to as well.
-              </p>
-            </ResumeSectionText>
-          </div>
-        </div>
-      </div>
+          <ResumeSectionText>
+            <p>
+              Feel free to contact me at my
+              <ResumeExternalLink
+                href="mailto:parekhupanshu@gmail.com"
+                after="📧"
+              >
+                Email
+              </ResumeExternalLink>
+              for any reason, whether it’s about any of my background listed
+              above, professional inquiries, or just to say hi!
+              <br /> <br />
+              Check out my
+              <ResumeExternalLink
+                href="/files/Upanshu_Parekh_Resume.pdf"
+                after="📝"
+              >
+                Resume
+              </ResumeExternalLink>
+              if you would like to as well.
+            </p>
+          </ResumeSectionText>
+        </section>
+      </article>
       <footer className="flex flex-col items-center gap-5 bg-main-slate p-7 text-white">
         <a
           href="#top"
