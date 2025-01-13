@@ -113,7 +113,7 @@ export default function Home(): JSX.Element {
                 <Image
                   src={atSign}
                   alt="At sign to Upanshu's email"
-                  className="w-5vw min-w-8"
+                  className="w-5vw min-w-9"
                   sizes="5vw"
                 />
               </a>
@@ -121,7 +121,7 @@ export default function Home(): JSX.Element {
                 <Image
                   src={githubLogo}
                   alt="Github logo to Upanshu's Github account"
-                  className="w-5vw min-w-8"
+                  className="w-5vw min-w-9"
                   sizes="5vw"
                 />
               </a>
@@ -129,7 +129,7 @@ export default function Home(): JSX.Element {
                 <Image
                   src={linkedinLogo}
                   alt="Linkedin logo to Upanshu's Linkedin account"
-                  className="w-5vw min-w-8"
+                  className="w-5vw min-w-9"
                   sizes="5vw"
                 />
               </a>
