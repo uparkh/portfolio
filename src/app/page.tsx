@@ -47,9 +47,9 @@ export default function Home(): JSX.Element {
         </div>
         <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
           <header>
-            <p className="text-xl 2xl:text-4xl">Hi, I am</p>
+            <p className="text-2xl 2xl:text-4xl">Hi, I am</p>
             <br />
-            <h1 className="text-4xl 2xl:text-7xl">Upanshu Parekh</h1>
+            <h1 className="text-5xl 2xl:text-7xl">Upanshu Parekh</h1>
             <h4 className="text-2xl 2xl:text-5xl">
               Aspiring Software Engineer
             </h4>
@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
         </div>
       </div>
       {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
-      <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
+      <div className="relative z-0 h-dvh max-h-[932px] overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
         <div className="absolute -bottom-12 left-0 right-0 -z-10 mx-auto h-9/10">
           <Image
             src={portrait}
@@ -92,48 +92,48 @@ export default function Home(): JSX.Element {
             className="translate-y-[6%] -scale-x-125 scale-y-125 object-contain object-center"
           />
         </div>
-        <div className="absolute inset-x-0 bottom-0 z-10 grid h-2/5 grid-cols-6 justify-end gap-3 p-4">
+        <div className="absolute inset-x-0 bottom-0 z-10 flex h-2/5 flex-col items-center p-6">
           <Image
             src={customHeader}
             alt=""
             fill={true}
             className="-z-10 opacity-70"
           />
-          <div className="relative col-span-5 px-4 font-raleway font-bold text-white">
-            <header className="absolute bottom-0 flex h-4/5 flex-col justify-evenly">
-              <p className="text-3vmax">Hi, I am</p>
-              <h1 className="text-5vmax">Upanshu Parekh</h1>
-              <h4 className="text-3vmax">Aspiring Software Engineer</h4>
+          <div className="flex h-full w-11/12 items-end justify-between">
+            <header className="flex h-4/5 flex-col justify-center gap-4 font-raleway font-bold text-white">
+              <p className="text-lg">Hi, I am</p>
+              <h1 className="text-4xl">Upanshu Parekh</h1>
+              <h4 className="text-lg">Aspiring Software Engineer</h4>
             </header>
-          </div>
-          <div className="flex flex-col items-center justify-around">
-            <a
-              href="mailto:parekhupanshu@gmail.com"
-              className="hover:opacity-80"
-            >
-              <Image
-                src={atSign}
-                alt="At sign to Upanshu's email"
-                className="w-[5vmax] min-w-8"
-                sizes="5vmax"
-              />
-            </a>
-            <a href="https://www.github.com/blc5-33">
-              <Image
-                src={githubLogo}
-                alt="Github logo to Upanshu's Github account"
-                className="w-[5vmax] min-w-8"
-                sizes="5vmax"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/uparkh/">
-              <Image
-                src={linkedinLogo}
-                alt="Linkedin logo to Upanshu's Linkedin account"
-                className="w-[5vmax] min-w-8"
-                sizes="5vmax"
-              />
-            </a>
+            <aside className="flex h-full flex-col items-center justify-around">
+              <a
+                href="mailto:parekhupanshu@gmail.com"
+                className="hover:opacity-80"
+              >
+                <Image
+                  src={atSign}
+                  alt="At sign to Upanshu's email"
+                  className="w-5vw min-w-8"
+                  sizes="5vw"
+                />
+              </a>
+              <a href="https://www.github.com/blc5-33">
+                <Image
+                  src={githubLogo}
+                  alt="Github logo to Upanshu's Github account"
+                  className="w-5vw min-w-8"
+                  sizes="5vw"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/uparkh/">
+                <Image
+                  src={linkedinLogo}
+                  alt="Linkedin logo to Upanshu's Linkedin account"
+                  className="w-5vw min-w-8"
+                  sizes="5vw"
+                />
+              </a>
+            </aside>
           </div>
         </div>
       </div>
