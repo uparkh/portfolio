@@ -47,10 +47,12 @@ export default function Home(): JSX.Element {
         </div>
         <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
           <header>
-            <p className="text-2vmax">Hi, I am</p>
+            <p className="text-xl 2xl:text-4xl">Hi, I am</p>
             <br />
-            <h1 className="text-4.5vmax">Upanshu Parekh</h1>
-            <h4 className="text-2.5vmax">Aspiring Software Engineer</h4>
+            <h1 className="text-4xl 2xl:text-7xl">Upanshu Parekh</h1>
+            <h4 className="text-2xl 2xl:text-5xl">
+              Aspiring Software Engineer
+            </h4>
           </header>
           <ul className="flex flex-col gap-5">
             <li>
@@ -82,7 +84,7 @@ export default function Home(): JSX.Element {
       </div>
       {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
       <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
-        <div className="h-9/10 absolute -bottom-12 left-0 right-0 -z-10 mx-auto">
+        <div className="absolute -bottom-12 left-0 right-0 -z-10 mx-auto h-9/10">
           <Image
             src={portrait}
             alt="Upanshu's portrait"
@@ -135,52 +137,56 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div
-        id="about-me"
-        className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white 2xl:px-28"
-      >
-        <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
-        <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
-          <ResponsiveImage
-            src={uiucCsLogo}
-            alt="UIUC CS Logo"
-            className="rounded-2xl"
-            sizeVariant="md"
-          />
-          <ResumeSectionText>
-            <p>
-              Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student at
-              the University of Illinois at Urbana-Champaign (UIUC) studying
-              Computer Science. I am most comfortable with:
-            </p>
-            <ul className="my-2 list-inside list-disc">
-              <li>
-                Python (Pytorch, Numpy, and other Data Processing libraries)
-              </li>
-              <li>Game Development Engines (Unreal Engine 5)</li>
-              <li>HTML / JavaScript / TypeScript (React.js, Next.js, D3.js)</li>
-              <li>CSS / Tailwind / LESS </li>
-              <li>Unix / Linux Machines</li>
-              <li>C / C++</li>
-            </ul>
-            <p>I have experience with:</p>
-            <ul className="my-2 list-inside list-disc">
-              <li>
-                Containerization and Virtualization (Docker, QEMU, Virtual
-                Machines)
-              </li>
-              <li>SQL / Databases</li>
-              <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
-              <li>Java</li>
-            </ul>
-            <p>
-              My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
-              videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
-              conversation if we have any shared interests!
-            </p>
-          </ResumeSectionText>
-        </div>
-      </div>
+      <article className="flex w-full flex-col items-center bg-main-slate p-14">
+        <section
+          id="about-me"
+          className="flex w-11/12 flex-col items-center gap-5 text-white"
+        >
+          <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
+          <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
+            <ResponsiveImage
+              src={uiucCsLogo}
+              alt="UIUC CS Logo"
+              className="rounded-2xl"
+              sizeVariant="md"
+            />
+            <ResumeSectionText>
+              <p>
+                Hi! 👋 I’m Upanshu (oo-pahn-shoe), I’m a 4th year B.S. student
+                at the University of Illinois at Urbana-Champaign (UIUC)
+                studying Computer Science. I am most comfortable with:
+              </p>
+              <ul className="my-2 list-inside list-disc">
+                <li>
+                  Python (Pytorch, Numpy, and other Data Processing libraries)
+                </li>
+                <li>Game Development Engines (Unreal Engine 5)</li>
+                <li>
+                  HTML / JavaScript / TypeScript (React.js, Next.js, D3.js)
+                </li>
+                <li>CSS / Tailwind / LESS </li>
+                <li>Unix / Linux Machines</li>
+                <li>C / C++</li>
+              </ul>
+              <p>I have experience with:</p>
+              <ul className="my-2 list-inside list-disc">
+                <li>
+                  Containerization and Virtualization (Docker, QEMU, Virtual
+                  Machines)
+                </li>
+                <li>SQL / Databases</li>
+                <li>Cloud Infrastructure (GCP / Oracle Cloud)</li>
+                <li>Java</li>
+              </ul>
+              <p>
+                My personal interests include 🏎 Formula 1, 🔭 astronomy, 👾
+                videogames, and 🏋🏽‍♂️ weightlifting. Feel free to bring these up in
+                conversation if we have any shared interests!
+              </p>
+            </ResumeSectionText>
+          </div>
+        </section>
+      </article>
       <div id="experience" className="bg-main-ivory p-14 text-black 2xl:px-28">
         <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
@@ -286,7 +292,7 @@ export default function Home(): JSX.Element {
         <Image
           src={fancySeparator}
           alt=""
-          className="w-5/6 max-w-52 antialiased"
+          className="w-5/6 max-w-52"
           sizes="13rem"
         />
         <div className="flex flex-col items-center gap-5 md:flex-row-reverse md:gap-10">
@@ -365,7 +371,7 @@ export default function Home(): JSX.Element {
           className="flex flex-col items-center gap-1 border-b-1 border-neutral-500 pb-4 hover:opacity-80"
         >
           <ResponsiveImage src={doubleUpArrow} alt="" sizeVariant="xs" />
-          <p className="text-md font-montserrat font-bold capitalize tracking-widest 2xl:text-xl">
+          <p className="text-md font-montserrat font-bold capitalize tracking-widest">
             BACK TO TOP
           </p>
         </a>
@@ -385,7 +391,7 @@ export default function Home(): JSX.Element {
             />
           </a>
         </div>
-        <p className="text-center font-raleway text-sm font-medium 2xl:text-lg">
+        <p className="text-center font-raleway text-sm font-medium">
           Design inspired by Tomasz Gajda.
           <br /> Customized and developed with Next.js by Upanshu Parekh.
         </p>

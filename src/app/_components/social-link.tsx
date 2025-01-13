@@ -22,7 +22,7 @@ export default function SocialLink({
           sizeVariant="xs"
         />
       </div>
-      <p className="text-1.75vmax font-raleway font-medium">{text}</p>
+      <p className="font-raleway text-xl font-medium">{text}</p>
     </a>
   );
 }
