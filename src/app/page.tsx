@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
             fill={true}
             className="-z-10 object-cover opacity-70 brightness-[0]"
           />
-          <div className="h-9/10 absolute bottom-0 right-3 mx-auto w-5/6">
+          <div className="absolute bottom-0 right-3 mx-auto h-[85%] w-5/6">
             <Image
               src={portrait}
               alt="Upanshu's portrait"
@@ -46,12 +46,12 @@ export default function Home(): JSX.Element {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
-          <div>
+          <header>
             <p className="text-2vmax">Hi, I am</p>
             <br />
             <h1 className="text-4.5vmax">Upanshu Parekh</h1>
             <h4 className="text-2.5vmax">Aspiring Software Engineer</h4>
-          </div>
+          </header>
           <ul className="flex flex-col gap-5">
             <li>
               <SocialLink
@@ -98,11 +98,11 @@ export default function Home(): JSX.Element {
             className="-z-10 opacity-70"
           />
           <div className="relative col-span-5 px-4 font-raleway font-bold text-white">
-            <div className="absolute bottom-0 flex h-4/5 flex-col justify-evenly">
+            <header className="absolute bottom-0 flex h-4/5 flex-col justify-evenly">
               <p className="text-3vmax">Hi, I am</p>
               <h1 className="text-5vmax">Upanshu Parekh</h1>
               <h4 className="text-3vmax">Aspiring Software Engineer</h4>
-            </div>
+            </header>
           </div>
           <div className="flex flex-col items-center justify-around">
             <a
