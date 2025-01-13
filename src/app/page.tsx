@@ -341,10 +341,10 @@ export default function Home(): JSX.Element {
                   href="mailto:parekhupanshu@gmail.com"
                   after="📧"
                 >
-                  email
+                  Email
                 </ResumeExternalLink>
-                below for any reason, whether it’s about any of my background
-                listed above, professional inquiries, or just to say hi!
+                for any reason, whether it’s about any of my background listed
+                above, professional inquiries, or just to say hi!
                 <br /> <br />
                 Check out my
                 <ResumeExternalLink
