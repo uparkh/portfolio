@@ -40,12 +40,11 @@ export default function Home(): JSX.Element {
               src={portrait}
               alt="Upanshu's portrait"
               fill={true}
-              sizes="50vw"
-              className="translate-y-24 -scale-x-125 scale-y-125 object-contain object-center"
+              sizes="150%"
+              className="translate-y-1/4 -scale-x-150 scale-y-150 object-contain object-center"
             />
           </div>
         </div>
-        {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
         <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
           <div>
             <p className="text-2vmax">Hi, I am</p>
@@ -81,6 +80,7 @@ export default function Home(): JSX.Element {
           </ul>
         </div>
       </div>
+      {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
       <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
         <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
           <Image
