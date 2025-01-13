@@ -27,7 +27,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       {/* HIGHER DEVICE WIDTH HERO LAYOUT >=768px */}
-      <div className="relative z-0 hidden h-dvh overflow-hidden bg-main-ivory md:block">
+      <div className="relative z-0 hidden h-dvh overflow-hidden bg-main-ivory md:landscape:block">
         <div className="absolute bottom-0 right-0 top-0 h-full w-2/3">
           <Image
             src={desktopHeader}
@@ -48,10 +48,10 @@ export default function Home(): JSX.Element {
         {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
         <div className="absolute bottom-0 left-0 z-20 flex h-2/3 w-1/2 flex-col items-start justify-between p-10 font-raleway font-bold text-black lg:pl-16">
           <div>
-            <p className="text-xl lg:text-2xl">Hi, I am</p>
+            <p className="text-2vmax">Hi, I am</p>
             <br />
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl">Upanshu Parekh</h1>
-            <h4 className="text-lg lg:text-xl">Aspiring Software Engineer</h4>
+            <h1 className="text-4.5vmax">Upanshu Parekh</h1>
+            <h4 className="text-2.5vmax">Aspiring Software Engineer</h4>
           </div>
           <ul className="flex flex-col gap-5">
             <li>
@@ -81,7 +81,7 @@ export default function Home(): JSX.Element {
           </ul>
         </div>
       </div>
-      <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:hidden">
+      <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
         <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
           <Image
             src={portrait}
@@ -97,10 +97,12 @@ export default function Home(): JSX.Element {
             fill={true}
             className="-z-10 opacity-70"
           />
-          <div className="col-span-5 flex flex-col justify-evenly px-4 pt-11 font-raleway font-bold text-white shadow-white drop-shadow-lg">
-            <p className="text-xl">Hi, I am</p>
-            <h1 className="text-4xl">Upanshu Parekh</h1>
-            <h4 className="text-lg">Aspiring Software Engineer</h4>
+          <div className="relative col-span-5 px-4 font-raleway font-bold text-white">
+            <div className="absolute bottom-0 flex h-4/5 flex-col justify-evenly">
+              <p className="text-3vmax">Hi, I am</p>
+              <h1 className="text-5vmax">Upanshu Parekh</h1>
+              <h4 className="text-3vmax">Aspiring Software Engineer</h4>
+            </div>
           </div>
           <div className="flex flex-col items-center justify-around">
             <a
@@ -110,24 +112,24 @@ export default function Home(): JSX.Element {
               <Image
                 src={atSign}
                 alt="At sign to Upanshu's email"
-                className="w-5vw min-w-8"
-                sizes="5vw"
+                className="w-[5vmax] min-w-8"
+                sizes="5vmax"
               />
             </a>
             <ResumeExternalLink href="https://www.github.com/blc5-33">
               <Image
                 src={githubLogo}
                 alt="Github logo to Upanshu's Github account"
-                className="w-5vw min-w-8"
-                sizes="5vw"
+                className="w-[5vmax] min-w-8"
+                sizes="5vmax"
               />
             </ResumeExternalLink>
             <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
               <Image
                 src={linkedinLogo}
                 alt="Linkedin logo to Upanshu's Linkedin account"
-                className="w-5vw min-w-8"
-                sizes="5vw"
+                className="w-[5vmax] min-w-8"
+                sizes="5vmax"
               />
             </ResumeExternalLink>
           </div>
