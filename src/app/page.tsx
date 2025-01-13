@@ -82,12 +82,12 @@ export default function Home(): JSX.Element {
       </div>
       {/* LOWER DEVICE WIDTH HERO LAYOUT <768px */}
       <div className="relative z-0 h-dvh overflow-hidden bg-gradient-to-b from-neutral-800 to-neutral-500 pt-[4.5rem] md:landscape:hidden">
-        <div className="absolute left-0 right-0 -z-10 mx-auto h-full max-w-[480px] translate-y-4">
+        <div className="h-9/10 absolute -bottom-12 left-0 right-0 -z-10 mx-auto">
           <Image
             src={portrait}
             alt="Upanshu's portrait"
             fill
-            className="-scale-x-100 object-cover object-top"
+            className="translate-y-[6%] -scale-x-125 scale-y-125 object-contain object-center"
           />
         </div>
         <div className="absolute inset-x-0 bottom-0 z-10 grid h-2/5 grid-cols-6 justify-end gap-3 p-4">
