@@ -19,7 +19,8 @@ export default function ResumeExternalLink({
       className={`hover:opacity-80 ${className}}`}
     >
       {" "}
-      <span className="underline underline-offset-2">{children}</span> {after}{" "}
+      <span className="underline underline-offset-2">{children}</span>{" "}
+      <span className="mr-3">{after}</span>
     </a>
   );
 }

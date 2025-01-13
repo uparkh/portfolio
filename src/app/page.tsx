@@ -116,28 +116,28 @@ export default function Home(): JSX.Element {
                 sizes="5vmax"
               />
             </a>
-            <ResumeExternalLink href="https://www.github.com/blc5-33">
+            <a href="https://www.github.com/blc5-33">
               <Image
                 src={githubLogo}
                 alt="Github logo to Upanshu's Github account"
                 className="w-[5vmax] min-w-8"
                 sizes="5vmax"
               />
-            </ResumeExternalLink>
-            <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
+            </a>
+            <a href="https://www.linkedin.com/in/uparkh/">
               <Image
                 src={linkedinLogo}
                 alt="Linkedin logo to Upanshu's Linkedin account"
                 className="w-[5vmax] min-w-8"
                 sizes="5vmax"
               />
-            </ResumeExternalLink>
+            </a>
           </div>
         </div>
       </div>
       <div
         id="about-me"
-        className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white"
+        className="flex flex-col items-center gap-5 bg-main-slate p-14 text-white 2xl:px-28"
       >
         <ResumeSectionH1 className="border-white">ABOUT ME</ResumeSectionH1>
         <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
@@ -181,7 +181,7 @@ export default function Home(): JSX.Element {
           </ResumeSectionText>
         </div>
       </div>
-      <div id="experience" className="bg-main-ivory p-14 text-black">
+      <div id="experience" className="bg-main-ivory p-14 text-black 2xl:px-28">
         <div className="flex flex-col items-center gap-5 border-b-2 border-black pb-10">
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
           <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
@@ -247,7 +247,7 @@ export default function Home(): JSX.Element {
           PORTFOLIO
         </ResumeSectionH1>
       </div>
-      <div className="flex flex-col items-center gap-10 bg-main-slate p-14 text-white">
+      <div className="flex flex-col items-center gap-10 bg-main-slate p-14 text-white 2xl:px-28">
         <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
           <ResponsiveImage
             src={musaicLogo}
@@ -323,7 +323,7 @@ export default function Home(): JSX.Element {
       </div>
       <div
         id="contact-me"
-        className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black"
+        className="flex flex-col items-center gap-5 bg-main-ivory p-14 text-black 2xl:px-28"
       >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
         <div className="flex flex-col items-center gap-5 md:flex-row md:gap-10">
@@ -336,9 +336,15 @@ export default function Home(): JSX.Element {
           <div className="flex flex-col items-center gap-4">
             <ResumeSectionText>
               <p>
-                Feel free to contact me at my email below for any reason,
-                whether it’s about any of my background listed above,
-                professional inquiries, or just to say hi!
+                Feel free to contact me at my
+                <ResumeExternalLink
+                  href="mailto:parekhupanshu@gmail.com"
+                  after="📧"
+                >
+                  email
+                </ResumeExternalLink>
+                below for any reason, whether it’s about any of my background
+                listed above, professional inquiries, or just to say hi!
                 <br /> <br />
                 Check out my
                 <ResumeExternalLink
@@ -350,12 +356,6 @@ export default function Home(): JSX.Element {
                 if you would like to as well.
               </p>
             </ResumeSectionText>
-            <SocialLink
-              href="mailto:parekhupanshu@gmail.com"
-              src={atSign}
-              alt="At sign to Upanshu's email"
-              text="parekhupanshu@gmail.com"
-            />
           </div>
         </div>
       </div>
@@ -365,27 +365,27 @@ export default function Home(): JSX.Element {
           className="flex flex-col items-center gap-1 border-b-1 border-neutral-500 pb-4 hover:opacity-80"
         >
           <ResponsiveImage src={doubleUpArrow} alt="" sizeVariant="xs" />
-          <p className="text-md font-montserrat font-bold capitalize tracking-widest">
+          <p className="text-md font-montserrat font-bold capitalize tracking-widest 2xl:text-xl">
             BACK TO TOP
           </p>
         </a>
         <div className="flex items-center justify-evenly gap-8">
-          <ResumeExternalLink href="https://www.linkedin.com/in/uparkh/">
+          <a href="https://www.linkedin.com/in/uparkh/">
             <ResponsiveImage
               src={linkedinLogo}
               alt="Linkedin logo to Upanshu's Linkedin account"
               sizeVariant="sm"
             />
-          </ResumeExternalLink>
-          <ResumeExternalLink href="https://www.github.com/blc5-33">
+          </a>
+          <a href="https://www.github.com/blc5-33">
             <ResponsiveImage
               src={githubLogo}
               alt="Github logo to Upanshu's Github account"
               sizeVariant="sm"
             />
-          </ResumeExternalLink>
+          </a>
         </div>
-        <p className="text-center font-raleway text-sm font-medium">
+        <p className="text-center font-raleway text-sm font-medium 2xl:text-lg">
           Design inspired by Tomasz Gajda.
           <br /> Customized and developed with Next.js by Upanshu Parekh.
         </p>
