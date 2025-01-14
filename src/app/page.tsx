@@ -66,10 +66,10 @@ export default function Home(): JSX.Element {
             </li>
             <li>
               <SocialLink
-                href="https://www.github.com/blc5-33"
+                href="https://www.github.com/uparkh"
                 src={githubLogo}
                 alt="Github logo to Upanshu's Github account"
-                text="github.com/blc5-33"
+                text="github.com/uparkh"
               />
             </li>
             <li>
@@ -115,7 +115,7 @@ export default function Home(): JSX.Element {
                   sizes="5vw"
                 />
               </Anchor>
-              <Anchor href="https://www.github.com/blc5-33">
+              <Anchor href="https://www.github.com/uparkh">
                 <Image
                   src={githubLogo}
                   alt="Github logo to Upanshu's Github account"
@@ -385,7 +385,7 @@ export default function Home(): JSX.Element {
               sizeVariant="sm"
             />
           </Anchor>
-          <Anchor href="https://www.github.com/blc5-33">
+          <Anchor href="https://www.github.com/uparkh">
             <ResponsiveImage
               src={githubLogo}
               alt="Github logo to Upanshu's Github account"
