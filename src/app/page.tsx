@@ -185,64 +185,120 @@ export default function Home(): JSX.Element {
           </div>
         </section>
       </article>
-      <article
-        id="experience"
-        className="flex w-full flex-col items-center bg-main-ivory p-14 text-black"
-      >
-        <section className="flex w-11/12 flex-col items-center gap-5 border-b-2 border-black pb-10">
+      <div className="bg-main-ivory text-black">
+        <article
+          id="experience"
+          className="flex w-full flex-col items-center gap-14 p-14"
+        >
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
-          <div className="flex flex-col items-center gap-10 md:flex-row">
-            <ResponsiveImage
-              src={codehsLogo}
-              alt="CodeHS Logo"
-              sizeVariant="md"
+          <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+            <Image
+              src="https://media.licdn.com/dms/image/v2/D4D0BAQHb_akQgF4PFA/company-logo_200_200/company-logo_200_200/0/1708630998408?e=1744848000&v=beta&t=v9fQhvVw0D59djREaR3oiWntroY8Cyd38UPYqTMlrfA"
+              alt="Mirage VR Labs Logo"
+              width={300}
+              height={300}
+              className="w-45vw max-w-44 rounded-3xl md:w-20vw md:max-w-none lg:w-15vw xl:w-13vw 2xl:w-10vw"
+              sizes="45vw, (min-width: 768px) 20vw, (min-width: 1024px) 15vw, (min-width: 1280px) 13vw, (min-width: 1536px) 10vw"
             />
             <div>
-              <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
+              <ResumeExperienceH2>MiRage VR Labs</ResumeExperienceH2>
               <ResumeSectionText>
                 <p>
-                  Over the summer of 2024 I worked as a Software Engineer Intern
-                  at CodeHS, a company that develops educational Computer
-                  Science material for millions of students. I primarily used
-                  Python, Django, LESS, SQL, and Docker.
-                  <br /> <br />I worked on prototyping a search engine that
-                  performs fast similarity search on a word embedding database
-                  using Facebook AI Similarity Search, as well as a realtime
-                  quiz leaderboard prototype for Questions of the Day (similar
-                  to Kahoot!) using Google Firebase.
+                  I am currently a Software Engineer at the startup MiRage.
+                  MiRage VR Labs develops VR software that allows students to
+                  perform various science experiments in a virtual environment.
+                  It aims to provide an immersive and hands-on learning
+                  experience for students. Check out the
+                  <ResumeExternalLink
+                    href="https://www.linkedin.com/company/miragesciencelabs/"
+                    after="🔗"
+                  >
+                    LinkedIn page
+                  </ResumeExternalLink>
+                  for the startup!
+                  <br /> <br />I primarily work with the Unreal Engine 5 and C++
+                  to develop these VR experiences. My responsibilities include
+                  designing and implementing VR interactions and mechanics,
+                  optimizing the performance, and debugging and troubleshooting
+                  issues in VR environments.
                 </p>
               </ResumeSectionText>
             </div>
-          </div>
-        </section>
-        <section className="flex w-11/12 flex-col items-center gap-5 pt-10">
-          <ResumeSectionH1 className="border-black">
-            EXTRA&shy;CURRICULARS
-          </ResumeSectionH1>
-          <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
-            <ResponsiveImage
-              src={motecIem}
-              alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
-              sizeVariant="lg"
-            />
-            <div>
-              <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
-              <ResumeSectionText>
-                <p>
-                  Illini Electric Motorsports is about developing a racecar from
-                  scratch every year to compete internationally against other
-                  universities’ formula-spec cars.
-                  <br /> <br />I was a member of the Data Acquisition and
-                  Quantitative Analysis team from January to April 2024, and
-                  saved the team more than $700 by developing an in-house Python
-                  file format converter for the MoTeC i2 telemetry software by
-                  augmenting snippets of an existing open-source library.
-                </p>
-              </ResumeSectionText>
+          </section>
+          <Image
+            src={fancySeparator}
+            alt=""
+            className="w-5/6 max-w-52 invert"
+            sizes="13rem"
+          />
+          <section className="flex w-11/12 flex-col items-center gap-5">
+            <div className="flex flex-col items-center gap-10 md:flex-row">
+              <ResponsiveImage
+                src={codehsLogo}
+                alt="CodeHS Logo"
+                sizeVariant="md"
+              />
+              <div>
+                <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
+                <ResumeSectionText>
+                  <p>
+                    Over the summer of 2024 I worked as a Software Engineer
+                    Intern at CodeHS, a company that develops educational
+                    Computer Science material for millions of students. I
+                    primarily used Python, Django, LESS, SQL, and Docker.
+                    <br /> <br />I worked on prototyping a search engine that
+                    performs fast similarity search on a word embedding database
+                    using
+                    <ResumeExternalLink
+                      href="https://github.com/facebookresearch/faiss"
+                      after="🔎"
+                    >
+                      Facebook AI Similarity Search
+                    </ResumeExternalLink>
+                    as well as a realtime quiz leaderboard prototype for
+                    Questions of the Day (similar to Kahoot!) using Google
+                    Firebase.
+                  </p>
+                </ResumeSectionText>
+              </div>
             </div>
-          </div>
-        </section>
-      </article>
+          </section>
+          <div className="w-11/12 border-b-2 border-black" />
+        </article>
+        <article
+          id="extracurricular"
+          className="flex w-full flex-col items-center px-14 pb-14"
+        >
+          <section className="flex w-11/12 flex-col items-center gap-5 pt-10">
+            <ResumeSectionH1 className="border-black">
+              EXTRA&shy;CURRICULARS
+            </ResumeSectionH1>
+            <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
+              <ResponsiveImage
+                src={motecIem}
+                alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
+                sizeVariant="lg"
+              />
+              <div>
+                <ResumeExperienceH2>Formula SAE</ResumeExperienceH2>
+                <ResumeSectionText>
+                  <p>
+                    Illini Electric Motorsports is about developing a racecar
+                    from scratch every year to compete internationally against
+                    other universities’ formula-spec cars.
+                    <br /> <br />I was a member of the Data Acquisition and
+                    Quantitative Analysis team from January to April 2024, and
+                    saved the team more than $700 by developing an in-house
+                    Python file format converter for the MoTeC i2 telemetry
+                    software by augmenting snippets of an existing open-source
+                    library.
+                  </p>
+                </ResumeSectionText>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
       <header
         id="portfolio"
         className="relative flex flex-col items-center p-12"
