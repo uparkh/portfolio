@@ -191,7 +191,7 @@ export default function Home(): JSX.Element {
           className="flex w-full flex-col items-center gap-14 p-14"
         >
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
-          <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+          <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
             <Image
               src="https://media.licdn.com/dms/image/v2/D4D0BAQHb_akQgF4PFA/company-logo_200_200/company-logo_200_200/0/1708630998408?e=1744848000&v=beta&t=v9fQhvVw0D59djREaR3oiWntroY8Cyd38UPYqTMlrfA"
               alt="Mirage VR Labs Logo"
@@ -231,36 +231,33 @@ export default function Home(): JSX.Element {
             className="w-5/6 max-w-52 invert"
             sizes="13rem"
           />
-          <section className="flex w-11/12 flex-col items-center gap-5">
-            <div className="flex flex-col items-center gap-10 md:flex-row">
-              <ResponsiveImage
-                src={codehsLogo}
-                alt="CodeHS Logo"
-                sizeVariant="md"
-              />
-              <div>
-                <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
-                <ResumeSectionText>
-                  <p>
-                    Over the summer of 2024 I worked as a Software Engineer
-                    Intern at CodeHS, a company that develops educational
-                    Computer Science material for millions of students. I
-                    primarily used Python, Django, LESS, SQL, and Docker.
-                    <br /> <br />I worked on prototyping a search engine that
-                    performs fast similarity search on a word embedding database
-                    using
-                    <ResumeExternalLink
-                      href="https://github.com/facebookresearch/faiss"
-                      after="🔎"
-                    >
-                      Facebook AI Similarity Search
-                    </ResumeExternalLink>
-                    as well as a realtime quiz leaderboard prototype for
-                    Questions of the Day (similar to Kahoot!) using Google
-                    Firebase.
-                  </p>
-                </ResumeSectionText>
-              </div>
+          <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+            <ResponsiveImage
+              src={codehsLogo}
+              alt="CodeHS Logo"
+              sizeVariant="md"
+            />
+            <div>
+              <ResumeExperienceH2>CodeHS</ResumeExperienceH2>
+              <ResumeSectionText>
+                <p>
+                  Over the summer of 2024 I worked as a Software Engineer Intern
+                  at CodeHS, a company that develops educational Computer
+                  Science material for millions of students. I primarily used
+                  Python, Django, LESS, SQL, and Docker.
+                  <br /> <br />I worked on prototyping a search engine that
+                  performs fast similarity search on a word embedding database
+                  using
+                  <ResumeExternalLink
+                    href="https://github.com/facebookresearch/faiss"
+                    after="🔎"
+                  >
+                    Facebook AI Similarity Search
+                  </ResumeExternalLink>
+                  as well as a realtime quiz leaderboard prototype for Questions
+                  of the Day (similar to Kahoot!) using Google Firebase.
+                </p>
+              </ResumeSectionText>
             </div>
           </section>
           <div className="w-11/12 border-b-2 border-black" />
@@ -273,7 +270,7 @@ export default function Home(): JSX.Element {
             <ResumeSectionH1 className="border-black">
               EXTRA&shy;CURRICULARS
             </ResumeSectionH1>
-            <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
+            <div className="flex flex-col items-center gap-5 md:flex-row">
               <ResponsiveImage
                 src={motecIem}
                 alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
@@ -314,7 +311,7 @@ export default function Home(): JSX.Element {
         </ResumeSectionH1>
       </header>
       <article className="flex w-full flex-col items-center gap-10 bg-main-slate p-14 text-white">
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
           <ResponsiveImage
             src={musaicLogo}
             alt="Musaic Logo"
@@ -355,7 +352,7 @@ export default function Home(): JSX.Element {
           className="w-5/6 max-w-52"
           sizes="13rem"
         />
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
           <video
             src="/breakout_ddqn_video.mp4"
             autoPlay
@@ -392,7 +389,7 @@ export default function Home(): JSX.Element {
         className="flex w-full flex-col items-center gap-5 bg-main-ivory p-14 text-black"
       >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
           <ResponsiveImage
             src={altProfessionalPic}
             alt="Upanshu's professional picture"
