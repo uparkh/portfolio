@@ -51,9 +51,7 @@ export default function Home(): JSX.Element {
             <p className="text-2xl 2xl:text-4xl">Hi, I am</p>
             <br />
             <h1 className="text-5xl 2xl:text-7xl">Upanshu Parekh</h1>
-            <h4 className="text-2xl 2xl:text-5xl">
-              Aspiring Software Engineer
-            </h4>
+            <h4 className="text-2xl 2xl:text-5xl">SWE at MiRage, CS at UIUC</h4>
           </header>
           <ul className="flex flex-col gap-5">
             <li>
@@ -104,7 +102,7 @@ export default function Home(): JSX.Element {
             <header className="flex h-4/5 flex-col justify-center gap-4 font-raleway font-bold text-white">
               <p className="text-lg">Hi, I am</p>
               <h1 className="text-4xl">Upanshu Parekh</h1>
-              <h4 className="text-lg">Aspiring Software Engineer</h4>
+              <h4 className="text-lg">SWE at MiRage, CS at UIUC</h4>
             </header>
             <aside className="flex h-full flex-col items-center justify-around">
               <Anchor href="mailto:parekhupanshu@gmail.com">
@@ -216,8 +214,8 @@ export default function Home(): JSX.Element {
                     LinkedIn page
                   </ResumeExternalLink>
                   for the startup!
-                  <br /> <br />I primarily work with the Unreal Engine 5 and C++
-                  to develop these VR experiences. My responsibilities include
+                  <br /> <br />I primarily work with Unreal Engine 5 and C++ to
+                  develop these VR experiences. My responsibilities include
                   designing and implementing VR interactions and mechanics,
                   optimizing the performance, and debugging and troubleshooting
                   issues in VR environments.
