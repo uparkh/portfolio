@@ -396,6 +396,9 @@ export default function Home(): JSX.Element {
           />
           <ResumeSectionText>
             <p>
+              Thanks for checking out my website! I hope you enjoyed learning
+              about me and my experiences.
+              <br /> <br />
               Feel free to contact me at my
               <ResumeExternalLink
                 href="mailto:parekhupanshu@gmail.com"
@@ -404,8 +407,11 @@ export default function Home(): JSX.Element {
                 Email
               </ResumeExternalLink>
               for any reason, whether it’s about any of my background listed
-              above, professional inquiries, or just to say hi!
-              <br /> <br />
+              above, professional inquiries, or just to say hi! I’m always open
+              to meeting new people and learning new things, and I usually
+              respond within 24-48 hours. My GitHub and LinkedIn are located in
+              the footer below as well as at the top of the page.
+              {/* <br /> <br />
               Check out my
               <ResumeExternalLink
                 href="/files/Upanshu_Parekh_Resume.pdf"
@@ -413,7 +419,7 @@ export default function Home(): JSX.Element {
               >
                 Resume
               </ResumeExternalLink>
-              if you would like to as well.
+              if you would like to as well. */}
             </p>
           </ResumeSectionText>
         </section>
