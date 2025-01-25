@@ -13,16 +13,17 @@ import codehsLogo from "/public/codehs-logo.png";
 import motecIem from "/public/motec-iem.png";
 import cyberscape from "/public/cyberscape.png";
 import musaicLogo from "/public/musaic-logo.svg";
-import fancySeparator from "/public/fancy-separator.png";
 import desktopHeader from "/public/desktop-header.svg";
 import customHeader from "/public/custom-header.png";
 import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 import doubleUpArrow from "/public/double-up-arrow.svg";
+import uiucMainLogo from "/public/uiuc-main-logo.png";
 
 import { JSX } from "react";
 import ResponsiveImage from "./_components/responsive-next-image";
 import SocialLink from "./_components/social-link";
 import Anchor from "./_components/anchor";
+import FancySeparator from "./_components/fancy-separator";
 
 export default function Home(): JSX.Element {
   return (
@@ -193,8 +194,8 @@ export default function Home(): JSX.Element {
             <Image
               src="https://media.licdn.com/dms/image/v2/D4D0BAQHb_akQgF4PFA/company-logo_200_200/company-logo_200_200/0/1708630998408?e=1744848000&v=beta&t=v9fQhvVw0D59djREaR3oiWntroY8Cyd38UPYqTMlrfA"
               alt="Mirage VR Labs Logo"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="w-45vw max-w-44 rounded-3xl md:w-20vw md:max-w-none lg:w-15vw xl:w-13vw 2xl:w-10vw"
               sizes="45vw, (min-width: 768px) 20vw, (min-width: 1024px) 15vw, (min-width: 1280px) 13vw, (min-width: 1536px) 10vw"
             />
@@ -223,13 +224,32 @@ export default function Home(): JSX.Element {
               </ResumeSectionText>
             </div>
           </section>
-          <Image
-            src={fancySeparator}
-            alt=""
-            className="w-5/6 max-w-52 invert"
-            sizes="13rem"
-          />
+          <FancySeparator invert />
           <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+            <ResponsiveImage
+              src={uiucMainLogo}
+              alt="UIUC Logo"
+              sizeVariant="md"
+              className="rounded-2xl"
+            />
+            <div>
+              <ResumeExperienceH2>Course Assistant</ResumeExperienceH2>
+              <ResumeSectionText>
+                <p>
+                  I am also currently a Course Assistant for CS461 / ECE422
+                  (Computer Security I) at UIUC. I help students with their
+                  Cybersecurity-related projects throughout the semester and
+                  hold office hours to answer any questions they may have. I
+                  really enjoy helping students understand the material and
+                  figuring out how to explain it in a way that makes sense to
+                  them. Doing this has also helped me understand the material
+                  better.
+                </p>
+              </ResumeSectionText>
+            </div>
+          </section>
+          <FancySeparator invert />
+          <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
             <ResponsiveImage
               src={codehsLogo}
               alt="CodeHS Logo"
@@ -268,7 +288,7 @@ export default function Home(): JSX.Element {
             <ResumeSectionH1 className="border-black">
               EXTRA&shy;CURRICULARS
             </ResumeSectionH1>
-            <div className="flex flex-col items-center gap-5 md:flex-row">
+            <div className="flex flex-col items-center gap-5 md:flex-row-reverse">
               <ResponsiveImage
                 src={motecIem}
                 alt="A screenshot of MoTeC i2 telemetry software with the Illinois Electric Motorsports logo"
@@ -309,7 +329,7 @@ export default function Home(): JSX.Element {
         </ResumeSectionH1>
       </header>
       <article className="flex w-full flex-col items-center gap-10 bg-main-slate p-14 text-white">
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
           <ResponsiveImage
             src={musaicLogo}
             alt="Musaic Logo"
@@ -344,13 +364,8 @@ export default function Home(): JSX.Element {
             </p>
           </ResumeSectionText>
         </section>
-        <Image
-          src={fancySeparator}
-          alt=""
-          className="w-5/6 max-w-52"
-          sizes="13rem"
-        />
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
+        <FancySeparator />
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
           <video
             src="/breakout_ddqn_video.mp4"
             autoPlay
@@ -387,7 +402,7 @@ export default function Home(): JSX.Element {
         className="flex w-full flex-col items-center gap-5 bg-main-ivory p-14 text-black"
       >
         <ResumeSectionH1 className="border-black">CONTACT</ResumeSectionH1>
-        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row-reverse">
+        <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
           <ResponsiveImage
             src={altProfessionalPic}
             alt="Upanshu's professional picture"
