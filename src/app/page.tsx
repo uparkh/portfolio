@@ -18,6 +18,7 @@ import customHeader from "/public/custom-header.png";
 import altProfessionalPic from "/public/alt-professional-pic.jpeg";
 import doubleUpArrow from "/public/double-up-arrow.svg";
 import uiucMainLogo from "/public/uiuc-main-logo.png";
+import mirageLogo from "/public/mirage-logo.jpeg";
 
 import { JSX } from "react";
 import ResponsiveImage from "./_components/responsive-next-image";
@@ -191,13 +192,11 @@ export default function Home(): JSX.Element {
         >
           <ResumeSectionH1 className="border-black">EXPERIENCE</ResumeSectionH1>
           <section className="flex w-11/12 flex-col items-center gap-10 md:flex-row">
-            <Image
-              src="https://media.licdn.com/dms/image/v2/D4D0BAQHb_akQgF4PFA/company-logo_200_200/company-logo_200_200/0/1708630998408?e=1744848000&v=beta&t=v9fQhvVw0D59djREaR3oiWntroY8Cyd38UPYqTMlrfA"
-              alt="Mirage VR Labs Logo"
-              width={500}
-              height={500}
-              className="w-45vw max-w-44 rounded-3xl md:w-20vw md:max-w-none lg:w-15vw xl:w-13vw 2xl:w-10vw"
-              sizes="45vw, (min-width: 768px) 20vw, (min-width: 1024px) 15vw, (min-width: 1280px) 13vw, (min-width: 1536px) 10vw"
+            <ResponsiveImage
+              src={mirageLogo}
+              alt="MiRage VR Labs Logo"
+              className="rounded-2xl"
+              sizeVariant="lg"
             />
             <div>
               <ResumeExperienceH2>MiRage VR Labs</ResumeExperienceH2>
