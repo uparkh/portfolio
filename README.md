@@ -2,7 +2,7 @@
 
 The tech stack I used to make it was: Next.js, Node.js, Tailwind CSS, React.js, and TypeScript.
 
-I learned and used as many best practices for each of these technologies as I could, aiming to sharpen my front-end skillset. I'm sure you will agree if you take a look at my code.
+I learned and used as many best practices for each of these technologies as I could, aiming to sharpen my front-end skillset.
 
 > But it's just a portfolio website!
 
